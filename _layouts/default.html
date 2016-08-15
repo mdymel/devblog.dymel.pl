@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">    
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="shortcut icon" href="{{ "/favicon.png" | prepend: site.baseurl }}">
-    <!--<link rel="icon" type="image/png" href="/favicon.png">-->
+    <link rel="icon" href="/path/to/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/path/to/favicon-128.png" sizes="128x128">
+    <link rel="icon" href="/path/to/favicon-200.png" sizes="200x200">
+    <link rel="icon" href="/path/to/favicon-400.png" sizes="400x400">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic" />
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" />
 

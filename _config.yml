@@ -14,6 +14,14 @@ description: "Michał Dymel - Senior Software Developer, leader, Web Development
 # Tagline near the site title
 tagline: "Notes on my adventures as a software developer"
 
+logo: /favicon-400.png
+image: /favicon-400.png
+twitter:
+  username: mdymel
+
+facebook:
+  publisher: https://www.facebook.com/dymeldevblog/  
+
 # The subpath of your site, e.g. /blog, for generating urls
 baseurl: 
 
