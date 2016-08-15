@@ -2,7 +2,7 @@
 layout: post
 title: Why you should not use TFS
 date: '2016-07-21 10:12:08 +0200'
-image: /2016-07-21-why-you-should-not-use-tfs/featured.jpg
+image: /images/posts/2016-07-21-why-you-should-not-use-tfs/featured.jpg
 categories:
 - Uncategorised
 - Productivity

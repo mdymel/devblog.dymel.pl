@@ -2,7 +2,7 @@
 layout: post
 title: Hello World!
 date: '2016-02-27 10:06:20 +0100'
-image: /2016-02-27-hello-world/featured.jpg
+image: /images/posts/2016-02-27-hello-world/featured.jpg
 ---
 Hello and welcome to my Dev Blog.
 

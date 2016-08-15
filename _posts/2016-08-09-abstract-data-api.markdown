@@ -2,7 +2,7 @@
 layout: post
 title: Abstract the data from the API
 date: '2016-08-09 08:00:41 +0200'
-image: /2016-08-09-abstract-data-api/featured.jpg
+image: /images/posts/2016-08-09-abstract-data-api/featured.jpg
 categories:
 - Tips
 - .NET
