@@ -15,7 +15,6 @@ description: "Michał Dymel - Senior Software Developer, leader, Web Development
 tagline: "Notes on my adventures as a software developer"
 
 logo: /favicon-400.png
-image: /favicon-400.png
 twitter:
   username: mdymel
 
@@ -80,3 +79,11 @@ permalink: /:year/:month/:day/:title/
 markdown: kramdown
 kramdown:
     auto_ids: false
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      image: /favicon-400.png
