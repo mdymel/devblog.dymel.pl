@@ -18,8 +18,6 @@ logo: /favicon-400.png
 twitter:
   username: mdymel
 
-facebook:
-  publisher: https://www.facebook.com/dymeldevblog/  
 
 # The subpath of your site, e.g. /blog, for generating urls
 baseurl: 
