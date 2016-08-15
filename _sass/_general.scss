@@ -1,0 +1,572 @@
+/**
+ * General
+ * ----------------------------------------------------------------------------
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: 'Lato', Calibri, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: $mine-shaft;
+    color: #818181;
+    line-height: 1.66667;
+}
+
+a {
+    color: $picton-blue;
+    text-decoration: underline;
+    -webkit-transition: color 0.3s;
+    -moz-transition:    color 0.3s;
+    transition:         color 0.3s;
+    &:hover {
+        color: lighten( $picton-blue, 11% );
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: lighten( $mine-shaft, 4% );
+    font-weight: bold;
+    line-height: 1.16667;
+    margin: 0 0 24px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+address {
+    font-style: italic;
+    margin: 0 0 24px;
+}
+
+mark {
+    background: $gallery;
+    color: lighten( $mine-shaft, 4% );
+    padding: 0 3px;
+}
+
+ins {
+    background: $gallery;
+    color: lighten( $mine-shaft, 4% );
+    padding: 0 3px;
+    text-decoration: none;
+}
+
+p {
+    margin: 0 0 24px;
+}
+
+pre {
+    border-top: 2px solid $gallery;
+    background: $alabaster;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    padding: 30px 30px 30px 40px;
+    position: relative;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+pre:before {
+    background-color: $gallery;
+    content: "\f121";
+    font-family: 'fontawesome' !important;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    right: 0;
+    position: absolute;
+    padding: 6px 5px 7px;
+    speak: none;
+    text-transform: none;
+    top: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+blockquote {
+    border-left: 3px solid lighten( $picton-blue, 11% );
+    color: lighten( $mine-shaft, 4% );
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.8;
+    margin: 0 0 24px;
+    padding-left: 30px;
+}
+
+blockquote cite,
+blockquote small {
+    color: $silver;
+}
+
+blockquote p {
+    margin-bottom: 12px;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+dl,
+dd {
+    margin: 0 0 24px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+ul,
+ol {
+    margin: 0 0 24px;
+    padding: 0 0 0 30px;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
+li > ul,
+li > ol {
+    margin-bottom: 0;
+}
+
+table {
+    border-bottom: 1px solid $gallery;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 24px;
+    text-align: left;
+    width: 100%;
+}
+
+caption {
+    color: $silver;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+th,
+td {
+    border-top: 1px solid $gallery;
+    padding: 8px 10px;
+}
+
+th {
+    background: $alabaster;
+    color: lighten( $mine-shaft, 4% );
+    font-weight: bold;
+}
+
+hr {
+    background: $gallery;
+    border: 0;
+    height: 2px;
+    margin: 24px 0;
+}
+
+/* Form fields */
+button,
+input,
+select,
+textarea {
+    background-color: $white;
+    border: 2px solid $gallery;
+    border-radius: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box; 
+    color: lighten( $mine-shaft, 4% );
+    font-size: 16px;
+    max-width: 100%;
+    padding: 10px;
+    vertical-align: baseline;
+    -webkit-transition: all 0.3s;
+    -moz-transition:    all 0.3s;
+    transition:         all 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+    outline: 0;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    background-color: $picton-blue;
+    border: 0;
+    color: $white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 12px 30px;
+    text-transform: uppercase;
+}
+
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+    background-color: lighten( $picton-blue, 11% );
+    outline: 0;
+}
+
+/* Placeholder text color */
+::-webkit-input-placeholder {
+    color: $silver;
+}
+
+:-moz-placeholder {
+    color: $silver;
+}
+
+::-moz-placeholder {
+    color: $silver;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: $silver;
+}
+
+/* Images */
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+a img {
+    -webkit-transition: opacity 0.3s;
+    -moz-transition:    opacity 0.3s;
+    transition:         opacity 0.3s;
+}
+
+a:hover img {
+    opacity: 0.8;
+}
+
+/* Image alignment */
+.alignleft {
+    float: left;
+    margin: 6px 30px 12px 0;
+    max-width: 50%;
+}
+
+.alignright {
+    float: right;
+    margin: 6px 0 12px 30px;
+    max-width: 50%;
+}
+
+.full-width {
+    clear: both;
+    margin: 6px -80px 24px;
+}
+
+/* Image captions */
+.caption {
+    margin-bottom: 24px;
+}
+
+.caption-text {
+    color: $silver;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.5;
+    padding: 8px 0 0;
+    text-align: center;
+}
+
+/* Videos, audios and embeds */
+embed,
+iframe,
+object,
+video {
+    max-width: 100%;
+}
+
+.fluid-width-video-wrapper {
+    margin: 0 0 24px;
+}
+
+/* Clearing floats */
+.inner:after,
+.nav-menu:after,
+.entry-header:after,
+.entry-content:after,
+.social-links:after {
+    clear: both;
+}
+
+.inner:before,
+.inner:after,
+.nav-menu:before,
+.nav-menu:after,
+.entry-header:before,
+.entry-header:after,
+.entry-content:before,
+.entry-content:after,
+.social-links:before,
+.social-links:after {
+    content: "";
+    display: table;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+    border: 0 none;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+}
+
+/* Text selection */
+::-moz-selection {
+    background: $gallery;
+    color: lighten( $mine-shaft, 4% );
+    text-shadow: none;
+}
+
+::selection {
+    background: $gallery;
+    color: lighten( $mine-shaft, 4% );
+    text-shadow: none;
+}
+
+/* Syntax Highlighter - Solarized Light 
+http://ethanschoonover.com/solarized
+
+SOLARIZED HEX      ROLE
+--------- -------- ------------------------------------------
+base01    #586e75  body text / default code / primary content
+base1     #93a1a1  comments / secondary content
+base3     #fdf6e3  background
+orange    #cb4b16  constants
+red       #dc322f  regex, special keywords
+blue      $picton-blue  reserved keywords
+cyan      #2aa198  strings, numbers
+green     #859900  operators, other keywords
+*/
+
+.highlight .c { color: #93a1a1 } /* Comment */
+.highlight .err { color: #586e75 } /* Error */
+.highlight .g { color: #586e75 } /* Generic */
+.highlight .k { color: #859900 } /* Keyword */
+.highlight .l { color: #586e75 } /* Literal */
+.highlight .n { color: #586e75 } /* Name */
+.highlight .o { color: #859900 } /* Operator */
+.highlight .x { color: #cb4b16 } /* Other */
+.highlight .p { color: #586e75 } /* Punctuation */
+.highlight .cm { color: #93a1a1 } /* Comment.Multiline */
+.highlight .cp { color: #859900 } /* Comment.Preproc */
+.highlight .c1 { color: #93a1a1 } /* Comment.Single */
+.highlight .cs { color: #859900 } /* Comment.Special */
+.highlight .gd { color: #2aa198 } /* Generic.Deleted */
+.highlight .ge { color: #586e75; font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #dc322f } /* Generic.Error */
+.highlight .gh { color: #cb4b16 } /* Generic.Heading */
+.highlight .gi { color: #859900 } /* Generic.Inserted */
+.highlight .go { color: #586e75 } /* Generic.Output */
+.highlight .gp { color: #586e75 } /* Generic.Prompt */
+.highlight .gs { color: #586e75; font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #cb4b16 } /* Generic.Subheading */
+.highlight .gt { color: #586e75 } /* Generic.Traceback */
+.highlight .kc { color: #cb4b16 } /* Keyword.Constant */
+.highlight .kd { color: $picton-blue } /* Keyword.Declaration */
+.highlight .kn { color: #859900 } /* Keyword.Namespace */
+.highlight .kp { color: #859900 } /* Keyword.Pseudo */
+.highlight .kr { color: $picton-blue } /* Keyword.Reserved */
+.highlight .kt { color: #dc322f } /* Keyword.Type */
+.highlight .ld { color: #586e75 } /* Literal.Date */
+.highlight .m { color: #2aa198 } /* Literal.Number */
+.highlight .s { color: #2aa198 } /* Literal.String */
+.highlight .na { color: #586e75 } /* Name.Attribute */
+.highlight .nb { color: #B58900 } /* Name.Builtin */
+.highlight .nc { color: $picton-blue } /* Name.Class */
+.highlight .no { color: #cb4b16 } /* Name.Constant */
+.highlight .nd { color: $picton-blue } /* Name.Decorator */
+.highlight .ni { color: #cb4b16 } /* Name.Entity */
+.highlight .ne { color: #cb4b16 } /* Name.Exception */
+.highlight .nf { color: $picton-blue } /* Name.Function */
+.highlight .nl { color: #586e75 } /* Name.Label */
+.highlight .nn { color: #586e75 } /* Name.Namespace */
+.highlight .nx { color: #586e75 } /* Name.Other */
+.highlight .py { color: #586e75 } /* Name.Property */
+.highlight .nt { color: $picton-blue } /* Name.Tag */
+.highlight .nv { color: $picton-blue } /* Name.Variable */
+.highlight .ow { color: #859900 } /* Operator.Word */
+.highlight .w { color: #586e75 } /* Text.Whitespace */
+.highlight .mf { color: #2aa198 } /* Literal.Number.Float */
+.highlight .mh { color: #2aa198 } /* Literal.Number.Hex */
+.highlight .mi { color: #2aa198 } /* Literal.Number.Integer */
+.highlight .mo { color: #2aa198 } /* Literal.Number.Oct */
+.highlight .sb { color: #93a1a1 } /* Literal.String.Backtick */
+.highlight .sc { color: #2aa198 } /* Literal.String.Char */
+.highlight .sd { color: #586e75 } /* Literal.String.Doc */
+.highlight .s2 { color: #2aa198 } /* Literal.String.Double */
+.highlight .se { color: #cb4b16 } /* Literal.String.Escape */
+.highlight .sh { color: #586e75 } /* Literal.String.Heredoc */
+.highlight .si { color: #2aa198 } /* Literal.String.Interpol */
+.highlight .sx { color: #2aa198 } /* Literal.String.Other */
+.highlight .sr { color: #dc322f } /* Literal.String.Regex */
+.highlight .s1 { color: #2aa198 } /* Literal.String.Single */
+.highlight .ss { color: #2aa198 } /* Literal.String.Symbol */
+.highlight .bp { color: $picton-blue } /* Name.Builtin.Pseudo */
+.highlight .vc { color: $picton-blue } /* Name.Variable.Class */
+.highlight .vg { color: $picton-blue } /* Name.Variable.Global */
+.highlight .vi { color: $picton-blue } /* Name.Variable.Instance */
+.highlight .il { color: #2aa198 } /* Literal.Number.Integer.Long */
+
+/* Button styles */
+.square {
+    background-color: $tundora;
+    color: $silver;
+    display: inline-block;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    &:hover {
+        color: $white;
+    }
+}
+
+.fill-horizontal {
+    background-color: $picton-blue;
+    -webkit-box-shadow: inset -50px 0 $tundora;
+    -moz-box-shadow:    inset -50px 0 $tundora;
+    box-shadow:         inset -50px 0 $tundora;
+    position: relative;
+    -webkit-transition: box-shadow 0.3s;
+    -moz-transition:    box-shadow 0.3s;
+    transition:         box-shadow 0.3s;
+    &:hover {
+        -webkit-box-shadow: inset 0 0 $tundora;
+        -moz-box-shadow:    inset 0 0 $tundora;
+        box-shadow:         inset 0 0 $tundora;
+    }
+}
+
+/* em dash styling */
+.author-info .author-title:before,
+.comments-title:before,
+.widget-title:before {
+    content: "— "; 
+}
+
+/* Animations */
+.site-header,
+.site-main,
+.sidebar {
+    -webkit-animation-duration: 0.7s;
+    animation-duration:         0.7s;
+    -webkit-animation-fill-mode:    both;
+    animation-fill-mode:            both;
+    -webkit-animation-name: fadeInDown;
+    animation-name:         fadeInDown;
+}
+
+.site-header {
+    -webkit-animation-delay:  0.5s;
+    -moz-animation-delay:     0.5s;
+    animation-delay:          0.5s;
+}
+
+.site-main {
+    -webkit-animation-delay:  0.75s;
+    -moz-animation-delay:     0.75s;
+    animation-delay:          0.75s;
+}
+
+.sidebar {
+    -webkit-animation-delay:  1s;
+    -moz-animation-delay:     1s;
+    animation-delay:          1s;
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform:  translateY(-20px);
+        transform:          translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform:  translateY(0);
+        transform:          translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform:  translateY(-20px);
+        transform:          translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform:  translateY(0);
+        transform:          translateY(0);
+    }
+}

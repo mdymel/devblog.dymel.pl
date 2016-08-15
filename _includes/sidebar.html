@@ -1,0 +1,54 @@
+<aside class="sidebar">
+
+    {% if site.author_bio and site.author_name %}
+    <section class="widget widget-text">
+        <h2 class="widget-title">About {{ site.author_name }}</h2>
+        <p>{{ site.author_bio }}</p>
+    </section><!-- .widget-text -->
+    {% endif %}
+
+    {% if site.mailchimp_url %}
+    <section class="widget widget-newsletter">
+        <h2 class="widget-title">{{ site.title}} Newsletter</h2>
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+            <form action="{{ site.mailchimp_url }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                    <label for="mce-EMAIL">Subscribe here to get our latest updates</label>
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+        </div>
+        <!--End mc_embed_signup-->
+    </section><!-- .widget -->
+    {% endif %}
+
+    {% if site.banner_image %}
+    <section class="widget widget-text">
+        <p><a href="{{ site.banner_url }}" target="_blank"><img src="{{ site.baseurl }}/{{ site.banner_image }}" alt="Optional Banner Ad" /></a></p>
+    </section><!-- .widget-text-->
+    {% endif %}
+
+    <section class="widget widget-recent-posts">
+        <h2 class="widget-title">Latest Posts</h2>
+        <ul class="recent-posts">
+            {% for post in site.posts limit:5 %}
+            <li class="recent-item"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span>{{ post.date | date: "%B %-d, %Y" }}</span></li>
+            {% endfor %}
+        </ul><!-- .recent-posts -->
+    </section><!-- .widget-recent-posts -->
+
+    <!--Create a sorted array of tags-->
+    {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+    {% assign sortedTags = site_tags | split:',' | sort %}
+    <section class="widget widget-tags">
+        <h2 class="widget-title">Tags</h2>
+        <div class="tagcloud">
+            {% for tag in sortedTags %}
+            <a href="{{site.baseurl}}/tags/#{{ tag | cgi_escape }}">{{ tag }}</a>
+            {% endfor %}
+        </div><!-- .tagcloud -->
+    </section><!-- .widget -->
+
+</aside><!-- .sidebar -->

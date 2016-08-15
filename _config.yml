@@ -1,0 +1,74 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site title
+title: "Michal Dymel - DevBlog"
+
+# A description of your site for social meta tag, search engines, and feed.xml
+description: "Michał Dymel - Senior Software Developer, leader, Web Development Consultant focused on .NET & Angular2"
+
+# Tagline near the site title
+tagline: "Notes on my adventures as a software developer"
+
+# The subpath of your site, e.g. /blog, for generating urls
+baseurl: 
+
+sass:
+  sass_dir: _sass
+
+# The base hostname & protocol of your site for where absolute urls are needed
+url: "https://devblog.dymel.pl"
+
+# Site navigation - each item must have a title and a url.
+navigation:
+- text: Home
+  url: /
+# - text: About
+#   url: /about/
+- text: Contact
+  url: /contact/
+- text: Archives
+  url: /tags/
+
+# The shortname for your Disqus site to enable comments.
+disqus: michadymeldevblog
+
+# Author information - author info at the bottom of the post
+author_name: "Michał Dymel"
+author_bio: "Michał Dymel - Senior Software Developer, leader, Web Development Consultant focused on .NET & Angular2."
+author_url:  "https://devblog.dymel.pl"
+author_location: "Szczecin, Poland"
+author_image: /images/profile.jpg
+
+# Sidebar Add banner
+# banner_url: "http://justgoodthemes.com"
+# banner_image: images/banner.jpg
+
+# Sidebar newsletter widget - add your form action url for MailChimp signup form here
+mailchimp_url: "https://dymel.us14.list-manage.com/subscribe/post?id=c3fe53fa1f&u=1db0520efe8a43fe2dcf56a6d"
+
+# Social links in the site footer
+twitter_username: "mdymel"
+facebook_username: "dymeldevblog"
+# googleplus_username: "+username"
+github_username: "mdymel"
+# codepen_username: "username"
+# dribbble_uername: "username"
+# medium_username: "@username"
+# instagram_username: "username"
+# pinterest_username: "username"
+linkedin_username: "mdymel"
+
+# http://jekyllrb.com/docs/pagination/
+paginate: 5
+paginate_path: '/page/:num/'
+gems: [jekyll-paginate, jekyll-seo-tag]
+
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
+kramdown:
+    auto_ids: false

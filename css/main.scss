@@ -1,0 +1,1054 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import 
+    "variables",
+    "icons",
+    "reset",
+    "general"
+;
+
+/**
+ * Table of Contents
+ * ----------------------------------------------------------------------------
+ * 0. Structure
+ * 1. Site Navigation
+ * 2. Site Header
+ * 3. Content
+ *   3.1 Posts and Pages
+ *   3.2 Comments
+ *   3.3 Post/Paging Navigation
+ * 4. Site Footer
+ * 5. Widgets
+ * 6. Media Queries
+ */
+
+/**
+ * 0. Structure
+ * ----------------------------------------------------------------------------
+ */
+
+.site-navigation,
+.site-header,
+.site-content,
+.site-footer {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.inner {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.site-main {
+    float: left;
+    margin-bottom: 30px;
+    width: 75%;
+}
+
+.sidebar {
+    float: right;
+    font-size: 16px;
+    margin-bottom: 30px;
+    width: 21.666%;
+}
+
+/**
+ * 1. Site Navigation
+ * ----------------------------------------------------------------------------
+ */
+
+.site-navigation {
+    background: lighten( $mine-shaft, 4% );
+}
+
+.site-navigation .inner {
+    position: relative;
+}
+
+.nav-menu {
+    padding-right: 60px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    float: left;
+    font-size: 12px;    
+    line-height: 1.5;    
+    padding: 16px 0;
+    position: relative;
+}
+
+.nav-menu a {
+    border-left: 2px solid $tundora;
+    color: #818181;
+    display: block;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase;    
+}
+
+.nav-menu li:first-child > a {
+    border-left: 0;
+    padding-left: 0;
+}
+
+.nav-menu li:hover > a,
+.nav-menu .nav-current > a {
+    color: $picton-blue;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.subscribe-button {
+    color: $white;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/**
+ * 2. Site Header
+ * ----------------------------------------------------------------------------
+ */
+
+.site-header {
+    padding-bottom: 75px;
+    padding-top: 70px;
+}
+
+.site-title {
+    font-size: 36px;
+    float: left;
+    line-height: 1;
+    margin-bottom: 12px;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.site-title a {
+    color: $white;
+    display: block;
+    text-decoration: none;
+}
+
+.site-title a:hover {
+    color: lighten( $picton-blue, 11% );
+}
+
+.site-title .logo-text {
+    border-left: 10px solid $picton-blue;
+    padding-left: 20px;
+}
+
+.site-description {
+    color: #818181;
+    float: left;
+    font-size: 14px;    
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 0;
+    margin-top: 6px;
+    max-width: 40%;
+}
+
+/**
+ * 3. Content
+ * ----------------------------------------------------------------------------
+ */
+
+.entry-content,
+.entry-footer,
+.author-info,
+.comments-inner,
+.post-navigation .nav-inside {
+    margin: 0 auto;
+    max-width: 740px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+    margin-top: 36px;
+}
+
+.entry-content > h1:first-child,
+.entry-content > h2:first-child,
+.entry-content > h3:first-child,
+.entry-content > h4:first-child,
+.entry-content > h5:first-child,
+.entry-content > h6:first-child {
+    margin-top: 0;
+}
+
+/**
+ * 3.1 Posts and Pages
+ * ----------------------------------------------------------------------------
+ */
+
+.post {
+    background-color: $white;
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+}
+
+.post.featured {
+    position: relative;
+}
+
+.post .featured-post {
+    background-color: lighten( $picton-blue, 11% );
+    color: $white;
+    font-size: 14px;
+    height: 30px;
+    left: 0;
+    line-height: 2.14286;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 30px;
+}
+
+.entry-header {
+    margin-bottom: 40px;
+}
+
+.entry-header-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.post-thumbnail img {
+    width: 100%;
+}
+
+.entry-title {
+    background-color: $picton-blue;
+    clear: both;
+    color: $white;
+    float: left;
+    font-size: 36px;
+    margin: 60px 0 0;    
+    max-width: 75%;
+    padding: 30px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.post-thumbnail + .entry-title {
+    bottom: 0px;
+    left: 0px;
+    position: absolute;    
+}
+
+.entry-title a {    
+    color: $white;
+    text-decoration: none;
+}
+
+.entry-title a:hover {
+    color: $white;
+}
+
+.entry-meta {
+    background-color: lighten( $picton-blue, 11% ); 
+    clear: both;
+    color: $white;
+    font-size: 12px;
+    float: left;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding: 16px 30px;   
+    text-transform: uppercase;    
+}
+
+.entry-meta a {
+    color: $white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.read-more {
+    margin-top: 40px;
+}
+
+.read-more .more-link {
+    background-color: $picton-blue;
+    color: $white;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition:    background-color 0.3s;
+    transition:         background-color 0.3s;
+}
+
+.read-more .more-link:hover {
+    background-color: lighten( $picton-blue, 11% );
+}
+
+.entry-footer {
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.share-post {
+    margin-bottom: 30px;
+}
+
+.share-post a {
+    font-size: 14px;
+    height: 36px;
+    line-height: 2.57143;
+    text-align: center;
+    width: 36px;
+}
+
+.tag-links {
+    border-top: 2px solid $gallery;    
+    padding-top: 30px;
+}
+
+.tag-links a {
+    margin-bottom: 5px;
+    padding: 3px 10px;
+}
+
+.share-post a,
+.tag-links a {
+    background-color: $gallery;
+    color: #818181;
+    display: inline-block;
+    margin-left: 5px;
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition:    all 0.3s;
+    transition:         all 0.3s;
+}
+
+.share-post a:hover,
+.tag-links a:hover {
+    background-color: $picton-blue;
+    color: $white;
+}
+
+/* Author box */
+.author-box {
+    background-color: $white;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.post + .author-box {
+    margin-top: -40px;
+}
+
+.author-info {
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 85px;
+}
+
+.author-info a {
+    text-decoration: none;
+}
+
+.author-details {
+    padding-left: 120px;
+}
+
+.author-info .author-avatar {
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 85px;
+    float: left;
+    margin-right: 30px;
+    width: 85px;
+}
+
+.author-info .author-title {
+    font-size: 16px;    
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.author-location,
+.author-website,
+.author-stats {
+    color: $silver;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    text-transform: uppercase;    
+}
+
+.author-website a {
+    color: $silver;
+}
+
+.author-website a:hover {
+    color: $picton-blue;
+}
+
+/* Tags archive */
+.archive-tags-list {
+    margin-bottom: 24px;    
+}
+
+.archive-tags-list a,
+a.archive-top-link {
+    background-color: $gallery;
+    color: #818181;
+    display: inline-block;
+    letter-spacing: 1px;
+    line-height: 1.5;    
+    padding: 4px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition:    all 0.3s;
+    transition:         all 0.3s;
+}
+
+.archive-tags-list a {
+    font-size: 12px;
+    margin-bottom: 7px;
+    margin-left: 5px;
+}
+
+a.archive-top-link {
+    font-size: 11px;
+}
+
+.archive-tags-list a:hover,
+a.archive-top-link:hover {
+    background-color: $picton-blue;
+    color: $white;
+}
+
+.archive-posts-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.archive-posts-list li {
+    margin-bottom: 5px;
+}
+
+.archive-meta {
+    color: #818181;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+/**
+ * 3.2 Comments
+ * ----------------------------------------------------------------------------
+ */
+
+.comments-area {
+    background-color: $white;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    padding-top: 40px;
+}
+
+.comments-title {
+    border-bottom: 2px solid $gallery;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+/**
+ * 3.3 Post/Paging Navigation
+ * ----------------------------------------------------------------------------
+ */
+
+.pagination,
+.post-navigation {
+    margin-bottom: 60px;
+}
+
+.pagination {
+    background-color: lighten( $mine-shaft, 4% );
+    color: #818181;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 15px 60px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.newer-posts,
+.older-posts {
+    color: $white;
+    position: absolute;
+    top: 0;
+}
+
+.newer-posts {
+    left: 0;
+}
+
+.older-posts {
+    right: 0;
+}
+
+.post + .post-navigation {
+    margin-top: -20px;
+}
+
+.post-navigation .nav-next,
+.post-navigation .nav-previous {
+    background-color: $tundora;
+    border-left: 3px solid $picton-blue; 
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.post-navigation .nav-thumb {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 260px;
+}
+
+.post-navigation .nav-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.16667;
+    margin-bottom: 5px;
+    margin-right: 240px;
+}
+
+.post-navigation .nav-title a {
+    color: $white;
+    text-decoration: none;
+}
+
+.post-navigation .nav-title a:hover {
+    color: $picton-blue;
+}
+
+.post-navigation .nav-before,
+.post-navigation .nav-date {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-right: 240px;
+    text-transform: uppercase;
+}
+
+.post-navigation .nav-before {
+    color: $silver;
+    margin-bottom: 15px;
+}
+
+/**
+ * 4. Site Footer
+ * ----------------------------------------------------------------------------
+ */
+
+.site-footer {
+    background-color: lighten( $mine-shaft, 4% );
+}
+
+.site-footer .inner {
+    position: relative;
+}
+
+.social-links {
+    border-bottom: 2px solid $tundora;
+    padding-bottom: 60px;
+    padding-right: 90px;
+    padding-top: 60px;
+}
+
+.social-links a {
+    float: left;
+    margin: 0 3px 3px 0;
+}
+
+.site-info {
+    color: #666;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding-bottom: 60px;
+    padding-right: 90px;
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+
+.social-links + .site-info {
+    padding-right: 0;
+}
+
+.site-info .top-link {
+    color: $white;
+    font-size: 14px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+
+.social-links + .site-info .top-link {
+    top: 60px;
+}
+
+.site-info a {
+    text-decoration: none;
+}
+
+/**
+ * 5. Widgets
+ * ----------------------------------------------------------------------------
+ */
+
+.widget {
+    border-top: 2px solid $tundora;
+    margin-bottom: 40px;
+    padding-top: 30px;
+}
+
+.widget:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.widget-title {
+    color: $silver;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase; 
+}
+
+.widget input[type="text"],
+.widget input[type="email"],
+.widget input[type="url"],
+.widget input[type="password"],
+.widget input[type="search"],
+.widget select,
+.widget textarea {
+    border: 0;
+    font-size: 14px;
+    width: 100%;
+}
+
+.widget button,
+.widget input[type="submit"],
+.widget input[type="button"],
+.widget input[type="reset"] {
+    padding-bottom: 9px;
+    padding-top: 9px;
+}
+
+.widget-recent-posts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.widget-recent-posts li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.widget-recent-posts a {
+    color: $white;
+    text-decoration: none;
+}
+
+.widget-recent-posts a:hover {
+    color: $picton-blue;
+}
+
+.widget-recent-posts span {
+    color: #818181;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.widget-tags a {
+    background-color: $tundora;
+    color: $silver;
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin: 0 4px 8px 0;
+    padding: 6px 8px;    
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition:    all 0.3s;
+    transition:         all 0.3s;
+}
+
+.widget-tags a:hover {
+    background-color: $picton-blue;
+    color: $white;
+}
+
+.widget-newsletter label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.widget-newsletter input[type="email"] {
+    display: block;
+    margin-bottom: 15px;
+}
+
+/**
+ * 6. Media Queries
+ * ----------------------------------------------------------------------------
+ */
+
+@media only screen and (max-width: 1260px) {
+    .full-width {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .sidebar,
+    .site-main {
+        float: none;
+        margin-bottom: 60px;
+        width: auto;
+    }
+
+    .post,
+    .author-box,
+    .comments-area,
+    .pagination,
+    .post-navigation {
+        margin-bottom: 30px;
+    }
+
+    .post + .author-box,
+    .post + .post-navigation {
+        margin-top: -10px;
+    }
+
+    .widget {
+        text-align: center;
+    }
+
+    .widget-title:after {
+        content: " —";
+    }
+
+    .widget form {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .site-navigation,
+    .site-header,
+    .site-content,
+    .site-footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .site-header {
+        padding-bottom: 60px;
+        padding-top: 48px;
+    }
+
+    .post,
+    .author-box,
+    .comments-area,
+    .pagination,
+    .post-navigation,
+    .post-navigation .nav-next,
+    .post-navigation .nav-previous {
+        margin-bottom: 15px;
+    }
+
+    .post + .author-box,
+    .post + .post-navigation {
+        margin-top: 0;
+    }
+
+    .nav-menu {
+        background-color: #2d2d2d;
+        clear: left;
+        display: none;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .nav-menu li {
+        border-bottom: 2px solid lighten( $mine-shaft, 4% );
+        display: block;
+        float: none;
+        padding: 0;
+    }
+
+    .nav-menu li:last-child {
+        border-bottom: 0;
+    }
+
+    .nav-menu a {
+        border-left: 0;
+        padding: 15px 0;
+    }
+
+    #menu-toggle {
+        background-color: transparent;
+        border: 0;
+        color: #818181;
+        display: block;
+        float: left;
+        height: 50px;
+        padding-left: 20px;
+        padding-right: 0;
+        position: relative;
+    }
+
+    #menu-toggle:hover,
+    #menu-toggle:focus {
+        background-color: transparent;
+    }
+
+    #menu-toggle:before {
+        content: "\f0c9";
+        font-family: 'fontawesome' !important;
+        font-size: 14px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        left: 0;
+        line-height: 1.85714;
+        position: absolute;
+        speak: none;
+        text-transform: none;
+        top: 12px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    #menu-toggle.toggled-on {
+        color: lighten( $picton-blue, 11% );
+    }
+
+    #menu-toggle.toggled-on:before {
+        content: "\f00d";
+    }    
+}
+
+@media only screen and (max-width: 640px) {
+    html {
+        font-size: 100%;
+    }
+
+    h1,
+    .site-title {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .alignleft,
+    .alignright {
+        float: none;
+        margin: 6px 0 24px;
+        max-width: none;
+    }
+
+    .site-description {
+        max-width: none;
+    }
+
+    .entry-title {
+        font-size: 28px;
+        padding: 20px 15px 15px 20px;
+    }
+
+    .entry-meta {
+        padding: 15px 15px 15px 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .post-navigation .nav-next,
+    .post-navigation .nav-previous {
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+
+    .post-navigation .nav-thumb {
+        width: 200px;
+    }
+
+    .post-navigation .nav-title,
+    .post-navigation .nav-before,
+    .post-navigation .nav-date {
+        margin-right: 200px;
+    }
+
+    .post-navigation .nav-title {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2,
+    .site-title {
+        font-size: 24px;
+    }
+
+    h3,
+    .entry-title {
+        font-size: 20px;
+    }
+
+    h4,
+    blockquote {
+        font-size: 18px;
+    }
+
+    h5,
+    h6 {
+        font-size: 14px;
+    }
+
+    blockquote {
+        padding-left: 15px;
+    }
+
+    .entry-content,
+    .entry-footer,
+    .author-info,
+    .comments-inner,
+    .post-navigation .nav-inside {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .site-header {
+        padding-bottom: 48px;
+        padding-top: 36px;
+    }
+
+    .entry-header {
+        margin-bottom: 24px;
+    }
+
+    .entry-title {
+        margin-top: 30px;
+        max-width: none;
+        padding: 10px 15px;
+    }
+
+    .entry-meta {
+        font-size: 11px;
+        padding: 10px 15px;
+    }
+
+    .author-info .author-avatar {
+        float: none;
+        margin-bottom: 24px;
+    }
+
+    .author-details {
+        padding-left: 0;
+    }
+
+    .post-navigation .nav-next,
+    .post-navigation .nav-previous {
+        padding-bottom: 20px;
+        padding-top: 15px;
+    }
+
+    .post-navigation .nav-thumb {
+        width: 120px;
+    }
+
+    .post-navigation .nav-title {
+        font-size: 16px;
+        margin-right: 120px;
+    }
+
+    .post-navigation .nav-before,
+    .post-navigation .nav-date {
+        font-size: 10px;
+        margin-right: 120px;
+    }
+
+    .post-navigation .nav-before {
+        margin-bottom: 10px;
+    }
+
+    .social-links {
+        padding-right: 0;
+    }
+
+    .site-info {
+        padding-bottom: 40px;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .site-info .top-link {
+        display: block;
+        margin: 30px auto 0;
+        position: static;
+    }
+}
