@@ -2,7 +2,7 @@
 layout: post
 title: Becoming a better developer with NDepend
 date: '2016-07-18 08:00:52 +0200'
-image: 2016-07-18-becoming-a-better-developer-with-ndepend/featured.jpg
+image: /2016-07-18-becoming-a-better-developer-with-ndepend/featured.jpg
 categories:
 - Productivity
 - .NET

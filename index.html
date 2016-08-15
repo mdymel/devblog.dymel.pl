@@ -9,7 +9,7 @@ layout: default
                 <header class="entry-header"> 
                     <div class="entry-header-wrap">
                         {% if post.image %}
-                        <a href="{{site.baseurl}}{{post.url}}" class="post-thumbnail"><img src="{{ "/images/posts/" | append: post.image | prepend: site.baseurl }}" alt="{% if post.image_alt %}{{ post.image_alt }}{% else %}{{ post.title }} {% endif %}"></a>
+                        <a href="{{site.baseurl}}{{post.url}}" class="post-thumbnail"><img src="{{ "/images/posts" | append: post.image | prepend: site.baseurl }}" alt="{% if post.image_alt %}{{ post.image_alt }}{% else %}{{ post.title }} {% endif %}"></a>
                         {% endif %}
                         <h2 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark" title="Permanent Link to {{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h2>
                     </div><!-- .entry-header-wrap -->

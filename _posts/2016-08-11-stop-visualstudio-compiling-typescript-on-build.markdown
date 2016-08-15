@@ -2,7 +2,7 @@
 layout: post
 title: Stop VisualStudio transpiling TypeScript on build
 date: '2016-08-11 08:00:30 +0200'
-image: 2016-08-11-stop-visualstudio-compiling-typescript-on-build/featured.jpg
+image: /2016-08-11-stop-visualstudio-compiling-typescript-on-build/featured.jpg
 categories:
 - .NET
 - Angular2

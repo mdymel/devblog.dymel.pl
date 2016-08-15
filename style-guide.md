@@ -70,13 +70,13 @@ function initMap() {
 
 Images work too! Already know the URL of the image you want to include in your article? Simply paste it in like this to make it show up:
 
-{% include image_full.html imageurl="/images/posts/Apple-Watch-In-Car.jpg" title="Apple" caption="This is caption" %}
+{% include image_full.html imageurl="/images/postsApple-Watch-In-Car.jpg" title="Apple" caption="This is caption" %}
 
 Lorem ipsum dolor sit amet, `consectetuer adipiscing` elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero.
 
 ### Regular Image
 
-{% include image_caption.html imageurl="/images/posts/Apple-Watch-In-Car.jpg" title="Apple Super" caption="supertest" %}
+{% include image_caption.html imageurl="/images/postsApple-Watch-In-Car.jpg" title="Apple Super" caption="supertest" %}
 
 Lorem ipsum dolor sit amet, `consectetuer adipiscing` elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Lorem ipsum dolor sit amet, `consectetuer adipiscing` elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero.
 
