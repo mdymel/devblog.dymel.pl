@@ -2,6 +2,7 @@
 layout: post
 title: Release from git like Heroku
 date: '2016-04-08 09:43:52 +0200'
+image: /images/posts/2016-04-08-release-from-git-like-heroku/featured.jpg
 categories:
 - DajSiePoznac
 - Tips
