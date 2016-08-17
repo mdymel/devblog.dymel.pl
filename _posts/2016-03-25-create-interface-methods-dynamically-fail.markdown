@@ -3,13 +3,9 @@ layout: post
 title: 'MiSeCo #4: Create interface methods dynamically - #fail'
 date: '2016-03-25 08:00:23 +0100'
 image: /images/posts/2016-03-25-create-interface-methods-dynamically-fail/featured.jpg
-categories:
-- DajSiePoznac
-- MiSeCo
 tags:
 - dajsiepoznac
 - miseco
-- fail
 - .net
 ---
 In my [last post](/2016/03/22/create-types-dynamically-in-net) I have demonstrated a function generating a proxy object implementing an empty interface and a constructor from a base class. Now I will try to extend it to implement interface methods. First we need to list the interface methods we need to implement. We also have to remember our interface may inherit from other interfaces, so we need to scan it recursively.

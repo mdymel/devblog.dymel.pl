@@ -3,8 +3,6 @@ layout: post
 title: DajSiePoznac - summary
 date: '2016-05-31 23:55:51 +0200'
 image: /images/posts/2016-05-31-dajsiepoznac-summary/featured.jpg
-categories:
-- DajSiePoznac
 tags:
 - dajsiepoznac
 ---

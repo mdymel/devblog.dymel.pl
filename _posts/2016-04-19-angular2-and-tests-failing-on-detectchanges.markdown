@@ -3,12 +3,9 @@ layout: post
 title: Angular2 and tests failing on detectChanges
 date: '2016-04-19 16:14:34 +0200'
 image: /images/posts/2016-04-19-angular2-and-tests-failing-on-detectchanges/featured.jpg
-categories:
-- Bugs
-- Angular2
 tags:
 - angular2
-- tests
+- testing
 - bug
 ---
 I was working on an angular2 app at work today and stumbled on an error while testing. When I called

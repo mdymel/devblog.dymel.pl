@@ -3,13 +3,11 @@ layout: post
 title: Release from git like Heroku
 date: '2016-04-08 09:43:52 +0200'
 image: /images/posts/2016-04-08-release-from-git-like-heroku/featured.jpg
-categories:
-- DajSiePoznac
-- Tips
 tags:
 - dajsiepoznac
 - hosting
 - tips
+- git
 ---
 If you ever used (Heroku)[https://www.heroku.com/] services, you probably liked their release process. It is built around git. Every application you host there has its own repository. To deploy an application you simply push your changes to this repository and they do the magic. Have you ever wondered, how they do this magic? :) I did. So when I got my VPS in [Digital Ocean](https://m.do.co/c/52b0b5522e84) to host my applications, I wanted to have a similar deployment experience like on Heroku. It turned out to be very simple. You just have to write a deployment script in bash and set it up as a post-receive git hook. In the script, you can compile your app, run gulp or grunt tasks, whatever you need. Then you copy files to the destination directory et voil&agrave; - your app has been deployed!
 

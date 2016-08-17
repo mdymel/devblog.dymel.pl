@@ -3,8 +3,6 @@ layout: post
 title: 'MiSeCo #13: It''s not dead yet'
 date: '2016-08-04 23:11:23 +0200'
 image: /images/posts/2016-08-04-miseco-13-not-dead-yet/featured.jpg
-categories:
-- MiSeCo
 tags:
 - miseco
 ---

@@ -3,10 +3,8 @@ layout: post
 title: Status Code with empty response in ASP.NET Core
 date: '2016-06-29 18:32:53 +0200'
 image: /images/posts/2016-06-29-asp-net-core-status-code-empty-response/featured.jpg
-categories:
-- Web
-- ASP.NET Core
 tags:
+- .net
 - aspnetcore
 ---
 If you create JSON APIs, you know that sometimes it is useful to return **empty response** with just **status code** set. For example when user calls the API to get a document with id 123 and he doesn't have the rights to this particular document, it is a good practice to return with a status '403 Forbidden'. When you do that, you don't need to add anything to the response - status code is just enough.

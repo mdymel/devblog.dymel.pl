@@ -3,11 +3,8 @@ layout: post
 title: Creating test data and mocking dependencies
 date: '2016-04-26 07:50:24 +0200'
 image: /images/posts/2016-04-26-test-data-and-mocks/featured.jpg
-categories:
-- DajSiePoznac
-- Tips
-- .NET
 tags:
+- .net
 - dajsiepoznac
 - testing
 - autofixture

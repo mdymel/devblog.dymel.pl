@@ -3,12 +3,8 @@ layout: post
 title: How to disable ctrl scroll zoom
 date: '2016-03-18 07:00:27 +0100'
 image: /images/posts/2016-03-18-stop-ctrl-scroll-zoom/featured.jpg
-categories:
-- DajSiePoznac
-- Tips
-- Productivity
 tags:
-- windows
+- tools
 - tips
 - autohotkey
 - productivity

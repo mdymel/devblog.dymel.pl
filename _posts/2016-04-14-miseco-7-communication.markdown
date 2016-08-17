@@ -3,14 +3,10 @@ layout: post
 title: 'MiSeCo #7: Communication'
 date: '2016-04-14 10:45:22 +0200'
 image: /images/posts/2016-04-14-miseco-7-communication/featured.jpg
-categories:
-- DajSiePoznac
-- MiSeCo
 tags:
 - dajsiepoznac
 - aspnetcore
 - miseco
-- c#
 - .net
 ---
 # Previously on MiSeCo 

@@ -3,13 +3,9 @@ layout: post
 title: Abstract the data from the API
 date: '2016-08-09 08:00:41 +0200'
 image: /images/posts/2016-08-09-abstract-data-api/featured.jpg
-categories:
-- Tips
-- .NET
 tags:
 - .net
 - api
-- mapping
 ---
 Some time ago, I was faced with a problem. I had to import a lot of data from a third party API. It sounds simple and it was, but the API was using a completely flat structure for the data. It was also using a naming convention, which was completely different from the one in my code. To top it up, names it was using were not consistent at all. I didn't want to bring such a mess into my code, so I had to figure out a way to deal with it and transform this data into something nicer. The code I will be showing here was written in c#, but I am sure you can apply this pattern in any platform you are using.
 The API was providing me with the information on a certain product. It was used to display a configurator of this product on a website, so I was also getting data about possible values and if some properties should be hidden from the user. Everything was coming as a list of properties looking similar to this class: 

@@ -3,10 +3,6 @@ layout: post
 title: 'MiSeCo #11: Find free port for your application'
 date: '2016-04-28 07:50:37 +0200'
 image: /images/posts/2016-04-28-find-free-port-application/featured.jpg
-categories:
-- DajSiePoznac
-- MiSeCo
-- .NET
 tags:
 - dajsiepoznac
 - miseco

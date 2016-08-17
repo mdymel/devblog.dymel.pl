@@ -3,10 +3,8 @@ layout: post
 title: Pros and cons of cutting edge frameworks - ASP.NET Core
 date: '2016-05-10 08:00:18 +0200'
 image: /images/posts/2016-05-10-pros-cons-cutting-edge-frameworks-asp-net-core/featured.jpg
-categories:
-- DajSiePoznac
-- .NET
 tags:
+- .net
 - dajsiepoznac
 - aspnetcore
 ---

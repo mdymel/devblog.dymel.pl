@@ -3,9 +3,9 @@ layout: post
 title: Continous testing in VisualStudio with NCrunch
 date: '2016-07-28 08:00:56 +0200'
 image: /images/posts/2016-07-28-continous-testing-in-visualstudio-with-ncrunch/featured.png
-categories:
-- Productivity
 tags:
+- .net
+- productivity
 - testing
 - tools
 - ncrunch

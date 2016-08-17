@@ -3,14 +3,9 @@ layout: post
 title: 'MiSeCo #6: HTTP Interface to a class'
 date: '2016-04-05 07:50:24 +0200'
 image: /images/posts/2016-04-05-http-interface-to-a-class/featured.jpg
-categories:
-- DajSiePoznac
-- MiSeCo
-- .NET
 tags:
 - dajsiepoznac
 - aspnetcore
-- vnext
 - miseco
 - .net
 - autofac

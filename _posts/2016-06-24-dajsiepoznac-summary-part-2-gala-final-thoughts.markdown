@@ -3,11 +3,8 @@ layout: post
 title: 'DajSiePoznac - summary part 2: gala and final thoughts'
 date: '2016-06-24 08:00:26 +0200'
 image: /images/posts/2016-06-24-dajsiepoznac-summary-part-2-gala-final-thoughts/featured.jpg
-categories:
-- DajSiePoznac
 tags:
 - dajsiepoznac
-- summary
 - blogging
 ---
 Last weekend I went to Warsaw for a gala closing the 'Daj się poznać' competition. I summarised the competition itself a few weeks ago [here](https://devblog.dymel.pl/2016/05/31/dajsiepoznac-summary/), today I would like to focus on this event and most importantly, how it affected me and what am I going to do about it.

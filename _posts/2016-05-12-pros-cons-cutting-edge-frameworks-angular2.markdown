@@ -3,9 +3,6 @@ layout: post
 title: Pros and cons of cutting edge frameworks - Angular2
 date: '2016-05-12 08:09:11 +0200'
 image: /images/posts/2016-05-12-pros-cons-cutting-edge-frameworks-angular2/featured.jpg
-categories:
-- DajSiePoznac
-- Angular2
 tags:
 - dajsiepoznac
 - angular2

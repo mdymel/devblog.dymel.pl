@@ -3,11 +3,8 @@ layout: post
 title: 'MiSeCo #10: Hosting environment - welcome NancyFx'
 date: '2016-04-24 21:27:23 +0200'
 image: /images/posts/2016-04-24-miseco-10-hosting-environment-welcome-nancyfx/featured.jpg
-categories:
-- DajSiePoznac
-- MiSeCo
-- .NET
 tags:
+- .net
 - dajsiepoznac
 - aspnetcore
 - miseco

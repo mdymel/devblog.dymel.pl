@@ -3,10 +3,8 @@ layout: post
 title: Return 401 Unauthorized from ASP.NET Core API
 date: '2016-07-07 18:39:38 +0200'
 image: /images/posts/2016-07-07-return-401-unauthorized-from-asp-net-core-api/featured.jpg
-categories:
-- Web
-- ASP.NET Core
 tags:
+- .net
 - aspnetcore
 ---
 Another quick tip on working with ASP.NET Core API today. When you use ASP.NET Core Identity framework for user authentication, you probably use **[Authorize]** attribute in your controllers too. For those of you who don't know it, you can add it to a method in the controller if you want this method to be accessible only by users who have successfully logged in:

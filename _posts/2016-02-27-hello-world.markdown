@@ -3,6 +3,9 @@ layout: post
 title: Hello World!
 date: '2016-02-27 10:06:20 +0100'
 image: /images/posts/2016-02-27-hello-world/featured.jpg
+tags: 
+ - dajsiepoznac
+ - blogging
 ---
 Hello and welcome to my Dev Blog.
 

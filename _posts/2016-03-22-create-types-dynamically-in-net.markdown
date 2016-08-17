@@ -3,14 +3,9 @@ layout: post
 title: 'MiSeCo #3: Create types dynamically in C# .NET'
 date: '2016-03-22 18:15:24 +0100'
 image: /images/posts/2016-03-22-create-types-dynamically-in-net/featured.jpg
-categories:
-- DajSiePoznac
-- MiSeCo
 tags:
 - dajsiepoznac
 - miseco
-- c#
-- runtime
 - .net
 ---
 In the last post, I wrote about the structure of a MiSeCo project and how I am going to implement the base functionality. Today I would like to show you how I managed to create my first **interface implementation dynamically** in runtime. Just to remind you, I need them to be able to proxy the calls between microservices through some (to be defined) protocol - probably over HTTP connections. Services will be able to communicate with each other even though they won't know where the other service is being hosted or even if it's currently operating. If it's not operating, **MiSeCo will be able to queue requests **and fire them later, when the problem is resolved.

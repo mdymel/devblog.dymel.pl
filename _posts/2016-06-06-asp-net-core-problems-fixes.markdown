@@ -3,10 +3,8 @@ layout: post
 title: ASP.NET Core - problems and fixes
 date: '2016-06-06 08:03:15 +0200'
 image: /images/posts/2016-06-06-asp-net-core-problems-fixes/featured.jpg
-categories:
-- .NET
-- ASP.NET Core
 tags:
+- .net
 - aspnetcore
 ---
 I am working on a project based on ASP.NET Core for few months already. During this time I've had various problems I had to fix. Recently I converted my application to RC2 version release few weeks ago. I thought it might be good idea to write a post listing problems I had with an information how to fix them. I hope there will be some people who will find it useful.
