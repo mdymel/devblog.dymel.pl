@@ -2,6 +2,7 @@
 layout: post
 title: 'MiSeCo #3: Create types dynamically in C# .NET'
 date: '2016-03-22 18:15:24 +0100'
+image: /images/posts/2016-03-22-create-types-dynamically-in-net/featured.jpg
 categories:
 - DajSiePoznac
 - MiSeCo

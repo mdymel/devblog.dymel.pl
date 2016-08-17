@@ -2,6 +2,7 @@
 layout: post
 title: 'MiSeCo #4: Create interface methods dynamically - #fail'
 date: '2016-03-25 08:00:23 +0100'
+image: /images/posts/2016-03-25-create-interface-methods-dynamically-fail/featured.jpg
 categories:
 - DajSiePoznac
 - MiSeCo

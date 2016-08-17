@@ -2,6 +2,7 @@
 layout: post
 title: Communication between Angular2 Components
 date: '2016-06-13 07:57:23 +0200'
+image: /images/posts/2016-06-13-communication-angular2-components/featured.jpg
 categories:
 - Web
 - Angular2

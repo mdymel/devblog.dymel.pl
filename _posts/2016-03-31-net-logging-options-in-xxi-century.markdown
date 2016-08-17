@@ -2,6 +2,7 @@
 layout: post
 title: .NET Logging options in XXI century
 date: '2016-03-31 07:50:00 +0200'
+image: /images/posts/2016-03-31-net-logging-options-in-xxi-century/featured.jpg
 categories:
 - DajSiePoznac
 - Tips

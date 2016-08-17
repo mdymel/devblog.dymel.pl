@@ -2,6 +2,7 @@
 layout: post
 title: 'MiSeCo #9: Services Registry'
 date: '2016-04-21 07:50:29 +0200'
+image: /images/posts/2016-04-21-miseco-9-services-registry/featured.jpg
 categories:
 - DajSiePoznac
 - MiSeCo

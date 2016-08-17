@@ -2,6 +2,7 @@
 layout: post
 title: ASP.NET Core - problems and fixes
 date: '2016-06-06 08:03:15 +0200'
+image: /images/posts/2016-06-06-asp-net-core-problems-fixes/featured.jpg
 categories:
 - .NET
 - ASP.NET Core

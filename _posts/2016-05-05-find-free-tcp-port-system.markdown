@@ -2,6 +2,7 @@
 layout: post
 title: 'MiSeCo #12: Find free TCP port in the system'
 date: '2016-05-05 08:00:31 +0200'
+image: /images/posts/2016-05-05-find-free-tcp-port-system/featured.jpg
 categories:
 - DajSiePoznac
 - MiSeCo

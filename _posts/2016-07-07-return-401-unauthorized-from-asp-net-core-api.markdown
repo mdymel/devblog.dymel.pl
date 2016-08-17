@@ -2,6 +2,7 @@
 layout: post
 title: Return 401 Unauthorized from ASP.NET Core API
 date: '2016-07-07 18:39:38 +0200'
+image: /images/posts/2016-07-07-return-401-unauthorized-from-asp-net-core-api/featured.jpg
 categories:
 - Web
 - ASP.NET Core

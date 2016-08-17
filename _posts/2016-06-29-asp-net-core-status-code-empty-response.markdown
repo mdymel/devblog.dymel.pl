@@ -2,6 +2,7 @@
 layout: post
 title: Status Code with empty response in ASP.NET Core
 date: '2016-06-29 18:32:53 +0200'
+image: /images/posts/2016-06-29-asp-net-core-status-code-empty-response/featured.jpg
 categories:
 - Web
 - ASP.NET Core

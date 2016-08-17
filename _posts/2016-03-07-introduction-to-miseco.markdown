@@ -2,6 +2,7 @@
 layout: post
 title: 'MiSeCo #1: Introduction to MiSeCo'
 date: '2016-03-07 18:24:05 +0100'
+image: /images/posts/2016-03-07-introduction-to-miseco/featured.jpg
 categories:
 - DajSiePoznac
 - MiSeCo

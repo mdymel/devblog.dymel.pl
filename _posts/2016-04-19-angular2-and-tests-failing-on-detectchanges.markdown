@@ -2,6 +2,7 @@
 layout: post
 title: Angular2 and tests failing on detectChanges
 date: '2016-04-19 16:14:34 +0200'
+image: /images/posts/2016-04-19-angular2-and-tests-failing-on-detectchanges/featured.jpg
 categories:
 - Bugs
 - Angular2

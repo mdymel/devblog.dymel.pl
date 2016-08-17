@@ -2,6 +2,7 @@
 layout: post
 title: 'MiSeCo #5: Castle.DynamicProxy ForTheWin!'
 date: '2016-03-29 08:00:27 +0200'
+image: /images/posts/2016-03-29-castle-dynamicproxy-forthewin/featured.jpg
 categories:
 - DajSiePoznac
 - MiSeCo

@@ -2,6 +2,7 @@
 layout: post
 title: 'DajSiePoznac - summary part 2: gala and final thoughts'
 date: '2016-06-24 08:00:26 +0200'
+image: /images/posts/2016-06-24-dajsiepoznac-summary-part-2-gala-final-thoughts/featured.jpg
 categories:
 - DajSiePoznac
 tags:

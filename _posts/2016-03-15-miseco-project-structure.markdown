@@ -2,6 +2,7 @@
 layout: post
 title: 'MiSeCo #2: Project structure'
 date: '2016-03-15 08:30:33 +0100'
+image: /images/posts/2016-03-15-miseco-project-structure/featured.jpg
 categories:
 - DajSiePoznac
 - MiSeCo

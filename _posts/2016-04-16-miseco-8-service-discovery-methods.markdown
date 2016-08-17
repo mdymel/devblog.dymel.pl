@@ -2,6 +2,7 @@
 layout: post
 title: 'MiSeCo #8: Service discovery methods in microservices architecture'
 date: '2016-04-16 20:36:31 +0200'
+image: /images/posts/2016-04-16-miseco-8-service-discovery-methods/featured.jpg
 categories:
 - DajSiePoznac
 - MiSeCo

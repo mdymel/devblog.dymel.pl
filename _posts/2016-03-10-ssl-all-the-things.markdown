@@ -2,6 +2,7 @@
 layout: post
 title: SSL All the things!
 date: '2016-03-10 08:00:00 +0100'
+image: /images/posts/2016-03-10-ssl-all-the-things/featured.jpg
 categories:
 - DajSiePoznac
 - Web
