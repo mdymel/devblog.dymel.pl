@@ -9,7 +9,7 @@
 title: "Michal Dymel - DevBlog"
 
 # A description of your site for social meta tag, search engines, and feed.xml
-description: "Michał Dymel - Senior Software Developer, Leader, Web Development Consultant focused on .NET & Angular2"
+description: "Passionate software developer interested in Web Development, .NET, Angular2, Architecture and security. Currently doing remote consulting."
 
 # Tagline near the site title
 tagline: "Notes on my adventures as a software developer"
@@ -44,7 +44,7 @@ disqus: michadymeldevblog
 
 # Author information - author info at the bottom of the post
 author_name: "Michał Dymel"
-author_bio: "Michał Dymel - Senior Software Developer, leader, Web Development Consultant focused on .NET & Angular2."
+author_bio: "Passionate software developer interested in Web Development, .NET, Angular2, Architecture and security. Currently doing remote consulting."
 author_url:  "https://devblog.dymel.pl"
 author_location: "Szczecin, Poland"
 author_image: /images/profile.jpg
