@@ -38,6 +38,11 @@ facebook:
                     {% endif %}
                 </footer><!-- .entry-footer -->
             </article><!-- .post -->
+
+            {% if site.disqus %}
+                {% include disqus.html %}
+            {% endif %}
+            
             <div class="author-box">
                 <div class="author-info">
                     <div class="author-avatar" style="background-image: url({{ site.author_image }})"><span class="screen-reader-text">{{ site.author_name }}'s Picture</span></div>
@@ -49,6 +54,7 @@ facebook:
                     </div><!-- .author-details -->
                 </div><!-- .author-info -->
             </div><!-- .author-box -->
+            
             <nav class="post-navigation">
                 <h2 class="screen-reader-text">Post navigation</h2>
                 {% if page.previous.url %}
@@ -76,9 +82,6 @@ facebook:
                 </div><!-- .nav-next -->
                 {% endif %}
             </nav><!-- .post-navigation -->
-            {% if site.disqus %}
-                {% include disqus.html %}
-            {% endif %}
         </main><!-- .site-main -->
         {% include sidebar.html %}
     </div><!-- .inner -->
