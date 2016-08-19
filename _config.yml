@@ -54,7 +54,7 @@ author_image: /images/profile.jpg
 # banner_image: images/banner.jpg
 
 # Sidebar newsletter widget - add your form action url for MailChimp signup form here
-mailchimp_url: "https://dymel.us14.list-manage.com/subscribe/post?id=c3fe53fa1f&u=1db0520efe8a43fe2dcf56a6d"
+mailchimp_url: "https://dymel.us14.list-manage.com/subscribe/post?u=1db0520efe8a43fe2dcf56a6d&id=c3fe53fa1f"
 
 # Social links in the site footer
 twitter_username: "mdymel"
