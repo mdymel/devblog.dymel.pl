@@ -9,8 +9,7 @@ tags:
 - miseco
 - .net
 ---
-# Previously on MiSeCo 
-Last week I created an API, which has been able to find and invoke a method in a service. The API was getting all service classes by dependency injection supported by an Autofac container. The next step was to connect the dots and implement a way to invoke a remote service method by using the MiSeCo class.  
+Last week, I created an API, which has been able to find and invoke a method in a service. The API was getting all service classes by dependency injection supported by an Autofac container. The next step was to connect the dots and implement a way to invoke a remote service method by using the MiSeCo class.  
 
 # Communication 
 Just to remind you, how it's going to work, I will give an example. I have created a simple service called Service1, which implements an interface IService1: 
