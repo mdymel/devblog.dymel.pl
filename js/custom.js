@@ -28,6 +28,34 @@
             $('html, body').animate({'scrollTop': 0});
             e.preventDefault();
         });
+
+        // Mailchimp form 
+        $('#mc-embedded-subscribe-form').on('submit', function(e){
+            e.preventDefault();
+            var form = $('#mc-embedded-subscribe-form');
+
+            if ($('#mce-EMAIL').val() === "") {
+                return;
+            }
+
+            $.ajax({
+                type: form.attr('method'),
+                url: form.attr('action'),
+                data: form.serialize(),
+                cache       : false,
+                dataType    : 'jsonp',
+                jsonp       : 'c',
+                contentType: "application/json; charset=utf-8",
+                error       : function(err) { 
+                    toastr.error("Could not connect to the registration server. Please try again later.");
+                },
+                success     : function(data) {
+                    toastr.success("Please click the link in the email we just sent you", "Confirm your email address");
+                }
+            });
+        });
     });
 
 }(jQuery));
+
+
