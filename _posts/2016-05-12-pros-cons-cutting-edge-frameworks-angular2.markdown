@@ -7,7 +7,7 @@ tags:
 - dajsiepoznac
 - angular2
 ---
-In my [previous post](2016/05/10/pros-cons-cutting-edge-frameworks-asp-net-core), I wrote about my experience working on a project based on ASP.NET Core RC1. A framework which has not been released fully yet. Today I would like to give you a comparison to the work with another popular framework in beta (now also Release Candidate) stage - Angular2.
+In my [previous post](/2016/05/10/pros-cons-cutting-edge-frameworks-asp-net-core), I wrote about my experience working on a project based on ASP.NET Core RC1. A framework which has not been released fully yet. Today I would like to give you a comparison to the work with another popular framework in beta (now also Release Candidate) stage - Angular2.
 
 I am using it in the same project where I use ASP.NET Core, so I spent exactly&nbsp;the same amount of time with both of them. The last post was split into 3 sections - the good, the bad and the ugly. Here, I will go with a different format and make a comparison between these two frameworks.
 
