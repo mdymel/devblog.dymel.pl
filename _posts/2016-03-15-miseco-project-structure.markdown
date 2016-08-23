@@ -16,7 +16,7 @@ In the [last post about MiSeCo](/2016/03/07/introduction-to-miseco/) I have desc
 As you can see in the [GitHub repository](https://github.com/mdymel/miseco), there are a few projects created in the solution:
 
 1. MiSeCo - this is the place, where the magic will happen. It is a Class Library project, but de-facto it will act as a WebApi. It has a classic ASP.NET Core Startup class and an API Controller. The controller will only have one function, which will handle all service calls. There is also a class named MiSeCo - it will act as the brain of the whole library. More on this later. When the call comes in it will contain the name of the service, function and parameters. MiSeCo will find the service, invoke the function and return the result.
-1. Sample - I have also added a sample application. It contains a console project and two services (with contracts as explained in the [first MiSeCo post](2016/03/07/introduction-to-miseco)).
+1. Sample - I have also added a sample application. It contains a console project and two services (with contracts as explained in the [first MiSeCo post](/2016/03/07/introduction-to-miseco)).
 
 # MiSeCo class
 This class currently has only one method (which throws NotImplementedException :)). The purpose of this method is simple. It will be responsible for creating Proxy classes implementing service interfaces. For example, imagine you have a service with such an interface:
