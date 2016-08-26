@@ -86,3 +86,8 @@ facebook:
         {% include sidebar.html %}
     </div><!-- .inner -->
 </div><!-- .site-content -->
+
+
+{% if site.mailchimp_url %}
+    {% include mailchimp-popup.html %}
+{% endif %}
