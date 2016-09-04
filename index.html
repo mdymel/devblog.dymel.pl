@@ -9,8 +9,8 @@ image: /favicon-400.png
             <article class="post">
                 <header class="entry-header"> 
                     <div class="entry-header-wrap">
-                        {% if post.image %}
-                        <a href="{{site.baseurl}}{{post.url}}" class="post-thumbnail"><img src="{{  post.image | prepend: site.baseurl }}" alt="{% if post.image_alt %}{{ post.image_alt }}{% else %}{{ post.title }} {% endif %}"></a>
+                        {% if post.image or page.featured %}
+                        <a href="{{site.baseurl}}{{post.url}}" class="post-thumbnail"><img src="{% if post.featured %}{{ post.featured }}{% else %}{{ post.image }}{% endif %}" alt="{{ post.title }}"></a>
                         {% endif %}
                         <h2 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark" title="Permanent Link to {{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h2>
                     </div><!-- .entry-header-wrap -->

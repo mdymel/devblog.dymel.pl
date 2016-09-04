@@ -10,9 +10,9 @@ facebook:
             <article class="post">
                 <header class="entry-header"> 
                     <div class="entry-header-wrap">
-                        {% if page.image %}
+                        {% if page.image or page.featured %} 
                         <div class="post-thumbnail">
-                            <img src="{{  page.image | prepend: site.baseurl }}" alt="{% if page.image_alt %}{{ page.image_alt }}{% else %}{{ page.title }}{% endif %}">
+                            <img src="{% if page.featured %}{{ page.featured }}{% else %}{{ page.image }}{% endif %}" alt="{{ post.title }}">
                         </div><!-- .post-thumbnail -->
                         {% endif %}
                         <h1 class="entry-title">{{page.title}}</h1>
@@ -60,8 +60,8 @@ facebook:
                 {% if page.previous.url %}
                 <div class="nav-previous">
                     <div class="nav-inside">
-                        {% if page.previous.image %}
-                        <a href="{{ site.baseurl }}{{page.previous.url}}" class="nav-thumb" style="background-image: url({{  page.previous.image }})"></a>
+                        {% if page.previous.image or page.previous.featured %}
+                        <a href="{{ site.baseurl }}{{page.previous.url}}" class="nav-thumb" style="background-image: url({% if page.previous.featured %}{{ page.previous.featured }}{% else %}{{ page.previous.image }}{% endif %})"></a>
                         {% endif %}
                         <div class="nav-before">Previous</div>
                         <div class="nav-title"><a href="{{ site.baseurl }}{{page.previous.url}}">{{page.previous.title}}</a></div>
@@ -72,8 +72,8 @@ facebook:
                 {% if page.next.url %}
                 <div class="nav-next">
                     <div class="nav-inside">
-                        {% if page.next.image %}
-                        <a href="{{ site.baseurl }}{{page.next.url}}" class="nav-thumb" style="background-image: url({{  page.next.image }})"></a>
+                        {% if page.next.image or page.next.featured %}
+                        <a href="{{ site.baseurl }}{{page.next.url}}" class="nav-thumb" style="background-image: url({% if page.next.featured %}{{ page.next.featured }}{% else %}{{ page.next.image }}{% endif %})"></a>
                         {% endif %}
                         <div class="nav-before">Next</div>
                         <div class="nav-title"><a href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}}</a></div>

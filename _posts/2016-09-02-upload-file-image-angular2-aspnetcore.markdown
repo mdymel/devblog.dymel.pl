@@ -2,7 +2,8 @@
 layout: post
 title: How to upload a file (image) from angular2 to asp.net core
 date: '2016-09-02'
-image: /images/posts/2016-09-02-upload-file-image-angular2-aspnetcore/featured.jpg
+featured: /images/posts/2016-09-02-upload-file-image-angular2-aspnetcore/featured.jpg
+image: /images/posts/2016-09-02-upload-file-image-angular2-aspnetcore/code.png
 tags: 
  - aspnetcore
  - angular2
