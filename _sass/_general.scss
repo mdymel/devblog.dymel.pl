@@ -512,7 +512,8 @@ green     #859900  operators, other keywords
 .author-info .author-title:before,
 .comments-title:before,
 .widget-title:before {
-    content: "— "; 
+    content: "\2014";
+    margin-right: 1%;
 }
 
 /* Animations */
