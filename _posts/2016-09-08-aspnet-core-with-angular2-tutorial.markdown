@@ -9,7 +9,8 @@ tags:
  - angular2
  - tutorial
 ---
-In this post, I would like to show you, how to set up an application using ASP.NET Core as an API for Angular2 frontend. 
+In this tutorial, I would like to show you, how to set up an application using ASP.NET Core as an API for Angular2 frontend. You will read about Startup class in the new ASP, setting up Angular2 dependencies with NPM, configuring SystemJS, Angular2 components and services and how to connect it all together. 
+ 
 The whole project, which you can use as a template, can be found on [GitHub](https://github.com/mdymel/AspNetCoreAngular2). 
 
 1. [Backend](#backend)
