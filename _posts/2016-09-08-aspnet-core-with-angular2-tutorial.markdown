@@ -226,7 +226,8 @@ By default, angular2 uses SystemJS module loader to manage dependencies. I won't
         'rxjs': '/node_modules/rxjs',
         '@angular': '/node_modules/@angular',
         'moment': '/node_modules/moment/moment.js',
-        'primeng': "/node_modules/primeng"
+        'primeng': "/node_modules/primeng",
+        'app': "/app"
     };
 
     var packages = {
