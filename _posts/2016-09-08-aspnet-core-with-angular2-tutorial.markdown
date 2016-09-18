@@ -110,19 +110,20 @@ At this point, we have our backend part ready. Let’s setup the frontend. First
 
 {% highlight json %}
 "dependencies": {
-    "@angular/common": "2.0.0-rc.6",
-    "@angular/compiler": "2.0.0-rc.6",
-    "@angular/core": "2.0.0-rc.6",
-    "@angular/forms": "2.0.0-rc.6",
-    "@angular/http": "2.0.0-rc.6",
-    "@angular/platform-browser": "2.0.0-rc.6",
-    "@angular/platform-browser-dynamic": "2.0.0-rc.6",
-    "@angular/router": "3.0.0-rc.2",
-    "core-js": "^2.4.1",
-    "reflect-metadata": "^0.1.3",
-    "rxjs": "5.0.0-beta.11",
+    "@angular/common": "2.0.0",
+    "@angular/compiler": "2.0.0",
+    "@angular/core": "2.0.0",
+    "@angular/forms": "2.0.0",
+    "@angular/http": "2.0.0",
+    "@angular/platform-browser": "2.0.0",
+    "@angular/platform-browser-dynamic": "2.0.0",
+    "@angular/router": "3.0.0",
+
+    "core-js": "2.4.1",
+    "reflect-metadata": "0.1.3",
+    "rxjs": "5.0.0-beta.12",
     "systemjs": "0.19.27",
-    "zone.js": "^0.6.17"
+    "zone.js": "0.6.23"
 }
 {% endhighlight %}
 
@@ -225,15 +226,12 @@ By default, angular2 uses SystemJS module loader to manage dependencies. I won't
     var map = {
         'rxjs': '/node_modules/rxjs',
         '@angular': '/node_modules/@angular',
-        'moment': '/node_modules/moment/moment.js',
-        'primeng': "/node_modules/primeng",
         'app': "/app"
     };
 
     var packages = {
         'app':                        { main: 'main.js',  defaultExtension: 'js' },
-        'rxjs':                       { defaultExtension: 'js' },
-        'primeng':                    { defaultExtension: 'js' }
+        'rxjs':                       { defaultExtension: 'js' }
     };
 
     var ngPackageNames = [
@@ -245,7 +243,6 @@ By default, angular2 uses SystemJS module loader to manage dependencies. I won't
         'platform-browser',
         'platform-browser-dynamic',
         'router',
-        'router-deprecated',
         'testing',
         'upgrade'
     ];
