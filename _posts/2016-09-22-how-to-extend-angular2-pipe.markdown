@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to extend Angular2 pipe  
+title: How to extend an Angular2 pipe  
 date: '2016-09-22'
 featured: /images/posts/2016-09-22-how-to-extend-angular2-pipe/featured.jpg
 image: /images/posts/2016-09-22-how-to-extend-angular2-pipe/code.png
