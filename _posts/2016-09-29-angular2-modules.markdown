@@ -3,7 +3,7 @@ layout: post
 title: Angular2 modules  
 date: '2016-09-29'
 featured: /images/posts/2016-09-29-angular2-modules/featured.jpg
-image: /images/posts/2016-09-29-angular2-modules/featured.png
+image: /images/posts/2016-09-29-angular2-modules/featured.jpg
 tags: 
  - angular2
 ---
