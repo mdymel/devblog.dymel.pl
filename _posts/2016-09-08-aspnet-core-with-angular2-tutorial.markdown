@@ -437,3 +437,8 @@ With all these changes, our app prints very nice greeting:
 # <a name="summary"></a>Summary
 
 I think that it's enough to digest for one post, so I will finish now. If you go to [GitHub](https://github.com/mdymel/AspNetCoreAngular2), you can see the whole project, clone it and have a play with it yourself. If you like this post and would like to see more like that, please let me know in comments below what specific subject you are interested in.
+
+Next parts:
+ 
+* [Testing in Angular2](/2016/09/19/testing-in-angular2/)
+* [Angular2 Modules](https://devblog.dymel.pl/2016/09/29/angular2-modules/)
