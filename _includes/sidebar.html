@@ -7,7 +7,16 @@
     </section><!-- .widget-text -->
     {% endif %}
 
-    {% if site.mailchimp_url %}
+    <section class="widget">
+        <div class="fb-page" 
+            data-href="https://www.facebook.com/dymeldevblog/" 
+            data-small-header="false" 
+            data-adapt-container-width="true" 
+            data-hide-cover="false" 
+            data-show-facepile="false"><blockquote cite="https://www.facebook.com/dymeldevblog/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/dymeldevblog/">Michał Dymel - DevBlog</a></blockquote></div>
+    </section>
+
+    {% if false and  site.mailchimp_url %}
     <section class="widget widget-newsletter">
         <h2 class="widget-title">{{ site.title}} Newsletter</h2>
         <!-- Begin MailChimp Signup Form -->
@@ -23,6 +32,13 @@
         <!--End mc_embed_signup-->
     </section><!-- .widget -->
     {% endif %}
+
+    <section class="widget">
+        <h2 class="widget-title">Newsletter subscription</h2>
+        <div>
+            <div class="ulp-inline" data-id="YrIqr6VlcgSBSCcL"></div>
+        </div>
+    </section>
 
     {% if site.banner_image %}
     <section class="widget widget-text">
