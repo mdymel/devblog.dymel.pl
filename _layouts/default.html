@@ -11,6 +11,9 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic" />
     <link rel="stylesheet" href="/css/main.css" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script id="ulp-remote" src="https://tools.dymel.pl/popups/content/plugins/layered-popups/js/remote.min.js?ver=5.89" data-handler="https://tools.dymel.pl/popups/ajax.php"></script>
+    
     {% seo %}
     <!--<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">-->
     <!--<link rel="canonical" href="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">-->
@@ -43,6 +46,7 @@
         fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
+    
     <nav id="top" class="site-navigation">
         <div class="inner">
             <button id="menu-toggle" aria-expanded="false">Menu</button>
@@ -70,15 +74,12 @@
     </header>
     {{content}}
     {% include footer.html %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/plugins.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/custom.js"></script>
 
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
-    <script id="ulp-remote" src="https://tools.dymel.pl/popups/content/plugins/layered-popups/js/remote.min.js?ver=5.89" data-handler="https://tools.dymel.pl/popups/ajax.php"></script>
 
     <script>
     ulp_add_event("onexit", {
