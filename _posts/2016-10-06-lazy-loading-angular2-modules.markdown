@@ -11,9 +11,15 @@ tags:
 
 In the [last post](https://devblog.dymel.pl/2016/09/29/angular2-modules/) I have shown you how to split your application into modules. The problem with single-page-applications is the amount of scripts you have to load to the browser to show the first page. With standard configuration you're loading all the framework files, libraries etc., plus your whole application. Even to display a simple homepage, the browser is getting all your components, templates, services. Today you will learn how to setup your modules so that they are only loaded when needed. 
 
+1. [Lazy loading in Angular 2](#lazy-loading)
+1. [Implementation](#implementation)
+ * [Application routing](#app-routing) 
+ * [Module routing](#module-routing)
+ * [Lazy loaded module](#lazy-module)
+1. [Test and benefits - 80% improvement on homepage](#benefits)
+1. [Summary](#summary)
 
-
-# Lazy loading in Angular 2
+# <a name="lazy-loading"></a>Lazy loading in Angular 2
 Lazy loading makes most sense for complicated components, when they're using various different files. The [application](https://github.com/mdymel/AspNetCoreAngular2) I am working on in [these tutorials](https://devblog.dymel.pl/tags/#angular2) is rather simple. To be able to show you where lazy loading really shines, I have extended it with a new section called Products. I was describing adding components and services in the [first tutorial](/2016/09/08/aspnet-core-with-angular2-tutorial/), so here, I will only give you a link to the changesets:
 
 * [Adding product component](https://github.com/mdymel/AspNetCoreAngular2/commit/c5b488f77655ef0ba3d3319dcf5def10e7102c4e)
@@ -27,14 +33,14 @@ At this point our ProductsComponent is a simple page displaying list of products
 
 Because `HomeComponent` and `AboutComponent` are very small, I will leave them as eagerly loaded and only modify `ProductsModule` to be requested when needed. 
 
-# Lazy loading 
+# <a name="implementation"></a>Implementation
 In Angular2, lazy loading is built in and managed by the Router. There are few steps needed to set it up: 
 
 1. Specify lazy loaded routes in `app.routing.ts`.
 1. Create component routing file. 
 1. Modify lazy loaded module. 
 
-## Application routing 
+## <a name="app-routing"></a>Application routing 
 To specify lazy loading you need to create a path object with `loadChildren` property. In it, you have to setup a path and name of the module: 
 
 {% highlight json %} 
@@ -43,7 +49,7 @@ To specify lazy loading you need to create a path object with `loadChildren` pro
 
 This means that for Urls starting with `product`, angulars router will get module file `app/product/product.module` and expect a class `ProductModule`. We'll get to this module in a second, first let's prepare a routing file for it. 
 
-## Module routing
+## <a name="module-routing"></a>Module routing
 The routing for module looks a bit different than the application routing file: 
 
 {% highlight typescript %}
@@ -84,7 +90,7 @@ export class ProductComponent {}
 
 It a contains a navigation and a `<router-outlet>` placeholder for the module content. Next, in the routing config, we define childer paths. Here, the syntax is the same as in the `app.routing` file - you define the url and the component responsible for it. One thing to notice is `:id`, which means the url will capture this part as a parameter. The `ProductDetailsComponent` url might look like this: `/products/123`, where 123 will be passed as an `id` parameter. 
 
-## Lazy loaded module 
+## <a name="lazy-module"></a>Lazy loaded module 
 
 {% highlight typescript %}
 import {NgModule} from "@angular/core";
@@ -105,7 +111,7 @@ export class ProductModule {}
 
 There is only one thing added here - the lazy loaded module has to import `routing` configuration defined above. 
 
-# Test and benefits - 80% improvement on homepage
+# <a name="benefits"></a>Test and benefits - 80% improvement on homepage
 That's it! This is all you have to do to have your modules loaded when they're requested. It's a huge improvement over angular v1, where you had to play with different hacks to achieve that. 
 
 Before these changes, initial load of the home page needed 378 http requests: 
