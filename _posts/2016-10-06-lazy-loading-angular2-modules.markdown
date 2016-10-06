@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lazy loading Angular2 modules  
+title: Lazy loading in Angular2   
 date: '2016-10-06'
 featured: /images/posts/2016-10-06-lazy-loading-angular2-modules/featured.jpg
 image: /images/posts/2016-10-06-lazy-loading-angular2-modules/featured.jpg
