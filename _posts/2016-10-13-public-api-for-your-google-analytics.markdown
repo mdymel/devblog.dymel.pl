@@ -9,7 +9,7 @@ tags:
  - jekyll 
 ---
 
-Have you ever wanted to create a custom dashboard from the data on your Google Analytics account? And for the dashboard to be publically available? I recently wanted to add a "Top Posts" box on this blog. The problem is, it's based on Jekyll, so is statically generated. I could have created some kind of plugin for jekyll (or maybe there is one), but I thought it would be cooler to get this data directly from GA. Obviously, you need to be logged in to access the Google Analytics API, which makes it impossible to use on a webpage. However, I have found __Google Analytics superProxy__. Today, I would like to show you how you can easily create an API with your GA data. 
+Have you ever wanted to create a custom dashboard from the data on your Google Analytics account? And for the dashboard to be publicly available? I recently wanted to add a "Top Posts" box on this blog. The problem is, it's based on Jekyll, so is statically generated. I could have created some kind of plugin for jekyll (or maybe there is one), but I thought it would be cooler to get this data directly from GA. Obviously, you need to be logged in to access the Google Analytics API, which makes it impossible to use on a webpage. However, I have found __Google Analytics superProxy__. Today, I would like to show you how you can easily create an API with your GA data. 
 
 # What is it? 
 The [Google Analytics superProxy](https://github.com/googleanalytics/google-analytics-super-proxy) is a Python application, which allows you to make a GA query publically available on the internet. 
