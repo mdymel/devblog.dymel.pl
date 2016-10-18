@@ -442,3 +442,4 @@ Next parts:
  
 * [Testing in Angular2](/2016/09/19/testing-in-angular2/)
 * [Angular2 Modules](https://devblog.dymel.pl/2016/09/29/angular2-modules/)
+* [Lazy loading in Angular2](/2016-10-06-lazy-loading-angular2-modules)
