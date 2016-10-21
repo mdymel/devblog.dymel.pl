@@ -105,7 +105,7 @@ export class LoginService {
     private observer: Observer<boolean>;
 
     constructor() {
-        this.status = new Observable(observer =>
+        this.status = new Observable<boolean>(observer =>
             this.observer = observer
         ).share();
     }
