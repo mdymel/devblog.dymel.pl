@@ -22,7 +22,7 @@ I have blogged about it [last week](/2016/10/20/angular2-cli/), but in short, it
 Using it is much simpler, than configuring the application manually. If you are starting a new app, I **strongly recommend** using it. 
 
 # Creating an application
-I will now walk you through the process of creating an app using Visual Studio 2015. Whole code is available on [GitHub](https://github.com/mdymel/AspNetCoreAngular2Cli). Thanks to the input from [Paweł Sołtysiak](https://github.com/soltys), the project is also compatible with VS Code. 
+I will now walk you through the process of creating an app using Visual Studio 2015. The whole code is available on [GitHub](https://github.com/mdymel/AspNetCoreAngular2Cli). Thanks to the input from [Paweł Sołtysiak](https://github.com/soltys), the project is also compatible with VS Code. 
 
 ## Backend project
 Open Visual Studio and create a new ASP.NET Core project called Backend in the new solution. Name the solution with your project name. 
@@ -80,12 +80,12 @@ Next, add a new Class Library project in this solution.
 
 ![backend project](/images/posts/2016-10-25-angular2-cli-with-aspnet-core-application/create-frontend.png)
 
-I have used the Class Library, so that the frontend part is visible in the Visual Studio. 
+I have used the Class Library so that the frontend part is visible in the Visual Studio. 
 
 Now, open a command prompt, cd to the Frontend directory and run `ng init --name ProjectName`. This step will take a while. Ng will bootstrap your angular application and download all npm packages that you need. 
 
 ## Proxy to the API
-Because you will use TypeScript to write the frontend part, you can't just serve these files to the browser. In the previous tutorial, I have used gulp to process all the files. Here, we will use `ng` command for it. The `ng serve` command is building the app, serves it on 4200 port and watches for changes you make in your code. When it detects modified file, it rebuilds the app and send an event to the browser so it refreshes the window. This is great, but we also need to call our ASP API somehow. This is where the proxy configuration comes in. You need to create a file called `proxy.conf.json` in the Frontend directory: 
+Because you will use TypeScript to write the frontend part, you can't just serve these files to the browser. In the previous tutorial, I have used gulp to process all the files. Here, we will use `ng` command for it. The `ng serve` command is building the app, serves it on 4200 port and watches for changes you make in your code. When it detects modified file, it rebuilds the app and sends an event to the browser so it refreshes the window. This is great, but we also need to call our ASP API somehow. This is where the proxy configuration comes in. You need to create a file called `proxy.conf.json` in the Frontend directory: 
 
 {% highlight json %}
 {
@@ -102,7 +102,7 @@ The target value contains a port number. If you're using Visual Studio, you can 
 
 This will pass all the API requests to the running ASP.NET Core application. 
 
-Last thing we need to do here is to modify npm start script, so it uses the proxy configuration. Open `package.json` in the Frontend project, find the scripts section and modify start command to:  
+The last thing we need to do here is to modify npm start script, so it uses the proxy configuration. Open `package.json` in the Frontend project, find the scripts section and modify start command to:  
 
 {% highlight json %}
 "start": "ng serve --proxy-config proxy.conf.json"
