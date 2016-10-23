@@ -1,11 +1,13 @@
 ---
 layout: post
-title: Angular2 CLI with ASP.NET Core application   
+title: Angular2 CLI with ASP.NET Core application - tutorial
 date: '2016-10-25'
-featured: /images/posts/2016-10-25-angular2-cli-with-aspnet-core-application/featured.jpg
-image: /images/posts/2016-10-25-angular2-cli-with-aspnet-core-application/featured.jpg
+featured: /images/posts/2016-10-25-angular2-cli-with-aspnet-core-application-tutorial/featured.jpg
+image: /images/posts/2016-10-25-angular2-cli-with-aspnet-core-application-tutorial/featured.jpg
 tags: 
+ - aspnetcore
  - angular2
+ - tutorial
 ---
 Few weeks ago I have posted a [tutorial](/2016/09/08/aspnet-core-with-angular2-tutorial/) on how to build an Angular2 application with ASP.NET Core API. Today, I would like to show you another way to accomplish that - by using **Angular2 CLI**, which has built in support for building and bundling Angular2 applications. 
 
@@ -37,7 +39,7 @@ I will now walk you through the process of creating an app using Visual Studio 2
 ## <a name="backend-project"></a>Backend project
 Open Visual Studio and create a new ASP.NET Core project called Backend in the new solution. Name the solution with your project name. 
 
-![backend project](/images/posts/2016-10-25-angular2-cli-with-aspnet-core-application/create-backend.png)
+![backend project](/images/posts/2016-10-25-angular2-cli-with-aspnet-core-application-tutorial/create-backend.png)
 
 ## <a name="configure-mvc"></a>Configure MVC
 Because we have created an empty project, we need to configure MVC and add support for static files. For that, you need to add these two packages to `project.json` file: 
@@ -88,7 +90,7 @@ public class Startup
 ## <a name="frontend-project"></a>Frontend project
 Next, add a new Class Library project in this solution. 
 
-![backend project](/images/posts/2016-10-25-angular2-cli-with-aspnet-core-application/create-frontend.png)
+![backend project](/images/posts/2016-10-25-angular2-cli-with-aspnet-core-application-tutorial/create-frontend.png)
 
 I have used the Class Library so that the frontend part is visible in the Visual Studio. 
 
@@ -108,7 +110,7 @@ Because you will use TypeScript to write the frontend part, you can't just serve
 
 The target value contains a port number. If you're using Visual Studio, you can read it from Frontend project properties. 
 
-![front project properties](/images/posts/2016-10-25-angular2-cli-with-aspnet-core-application/proxy-conf.png)
+![front project properties](/images/posts/2016-10-25-angular2-cli-with-aspnet-core-application-tutorial/proxy-conf.png)
 
 This will pass all the API requests to the running ASP.NET Core application. 
 
