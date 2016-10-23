@@ -54,6 +54,35 @@
                 }
             });
         });
+
+        // Top posts
+        $.ajax({
+            type: 'GET', 
+            url: 'https://super-proxy-146115.appspot.com/query?id=ahRzfnN1cGVyLXByb3h5LTE0NjExNXIVCxIIQXBpUXVlcnkYgICAgICAgAoM',
+            crossDomain: true,
+            dataType: 'jsonp',
+            success: function(data) {
+                var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                var getDateFromUrl = function(url) {
+                    var regex = /([0-9]{4})\/([0-9]{2})\/([0-9]{2})\/.+/;
+                    var parts = regex.exec(url);
+                    var year = parts[1];
+                    var month = months[parts[2]-1];
+                    var day = parts[3];
+                    return month + " " + day + ", " + year;
+                };
+
+                var ul = $("#top-posts");
+                $.each(data.rows, function(index, row) {
+                    var url = row[0];
+                    var title = row[1].replace(" - Michal Dymel - DevBlog", "");
+                    var date = getDateFromUrl(url);
+                    
+                    var li = "<li class='recent-item'><a href='" + url + "'>" + title + "</a> <span>" + date + "</span></li>";
+                    ul.append(li);
+                }); 
+            }
+        });
     });
 
 }(jQuery));
