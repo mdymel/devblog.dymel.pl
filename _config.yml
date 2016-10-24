@@ -79,7 +79,7 @@ gems:
 permalink: /:year/:month/:day/:title/
 markdown: kramdown
 kramdown:
-    auto_ids: false
+    auto_ids: true
 
 future: false
 

@@ -10,6 +10,9 @@ tags:
 ---
 Today, at work, I spent quite a long time on figuring out, how to handle file upload, image to be exact, from angular2 app to backend in ASP.NET Core. I thought it's a good idea for a post -  maybe it will save you some time. 
 
+1. TOC
+{:toc}
+
 # Problem
 I want to have a component in angular2 which will display a form with a file selector and the submit button. This form will post the file to a backend in ASP.NET Core, which will handle the file and save it somewhere. 
 

@@ -12,19 +12,10 @@ In this post, I will show you how to test Angular2 application using Karma runne
 
 The code here is based on the [tutorial](/2016/09/08/aspnet-core-with-angular2-tutorial/) I posted before and is available on [GitHub](https://github.com/mdymel/AspNetCoreAngular2/).
 
-1. [Installing dependencies](#dependencies)
-1. [KarmaJS](#karmajs)
-    * [Karma configuration](#karma-config)
-    * [test-main.js](#test-main)
-    * [Running Karma](#running-karma)
-1. [Writing first test](#first-test)
-    * [Sanity tests](#sanity-tests)
-1. [Testing angular2 application](#testing-angular2)
-    * [Services](#services)
-    * [Components](#components)
-1. [Summary](#summary)
+1. TOC
+{:toc}
 
-# <a name="dependencies"></a>Installing dependencies 
+# Installing dependencies 
 First of all, you need to install karma and all other dependencies: 
 
 {% highlight json %}
@@ -55,16 +46,16 @@ First of all, you need to install karma and all other dependencies:
 
 You need to add these to the project.json file and run `npm install`.
 
-# <a name="karmajs"></a>KarmaJS
+# KarmaJS
 Karma is a test runner. It is designed to find the tests in your code base, execute them and write a report. It can use regular browsers (chrome, firefox etc.) or PhantomJs - a headless browser written in JavaScript. PhantomJS is generally a great option - you don't have any windows opened and everything happens in the background. The problem is, it's much slower than, for example Chrome. When you start karma it opens the browser you have chosen in the config, acts as a webserver for this browser and initializes a test framework, jasmine. 
 
-## <a name="karma-config"></a>Karma configuration
+## Karma configuration
 There are two files needed for the karma setup. First one is karma.conf.js. You guessed it right - it's a config file for karma. The whole file is available on [GitHub](https://github.com/mdymel/AspNetCoreAngular2/blob/master/src/AspNetCoreAngular2/karma.conf.js). There are two parts - one is setting up paths to all files needed by the tests and the other is just the options for karma (browser, type of report etc). 
 
-## <a name="test-main"></a>test-main.js
+## test-main.js
 This file is responsible for initializing the Angular2 application and loading all the tests. Again - whole file is available on [GitHub](https://github.com/mdymel/AspNetCoreAngular2/blob/master/src/AspNetCoreAngular2/Frontend/test-main.js). 
 
-## <a name="running-karma"></a>Running karma 
+## Running karma 
 To test the whole setup, run a command window and cd into the project directory. First, build the frontend application with `gulp build` (or have a watch running all the time with `gulp watch`):
 
 ![gulp build](/images/posts/2016-09-19-testing-in-angular2/gulp-build.png)
@@ -73,10 +64,10 @@ Then, run `karma start --single-run`. This should start the karma runner, open c
 
 ![karma start](/images/posts/2016-09-19-testing-in-angular2/karma-start.png)
 
-# <a name="first-test"></a>Writing first test
+# Writing first test
 Our first test will check if the whole setup works fine. Such tests are called sanity tests and they check for the known truths. Like that 2+2 is 4 :). Let's get to it! 
 
-## <a name="sanity-tests"></a>Sanity tests
+## Sanity tests
 Add a file `sanityTests.spec.ts` somewhere in the Frontend folder. I created `tests` directory and keep it there. All test files must end with spec.ts - that is how, karma will know it has to run them. 
 
 {% highlight typescript %}
@@ -95,10 +86,10 @@ So this is it - we have our first test, let's run it! (remember about `gulp buil
 
 Now, when we are sure, our setup works fine, we can start testing our application. 
 
-# <a name="testing-angular2"></a>Testing angular2 application
+# Testing angular2 application
 The Angular team prepared a framework to make it easy to test it. The whole concept uses a `TestBed` class. You need it to setup the test environment and create components to be tested. I will now demonstrate how to do it, by adding tests to the demo app I prepared for the [tutorial](/2016/09/08/aspnet-core-with-angular2-tutorial/), I posted before.
 
-## <a name="services"></a>Services
+## Services
 In the demo application we've had a [HelloService](https://github.com/mdymel/AspNetCoreAngular2/blob/master/src/AspNetCoreAngular2/Frontend/app/home/hello.service.ts) class. It was using HTTP protocol to communicate with the API and get the greeting message. 
 
 First step is to setup `TestBed` for our tests: 
@@ -144,7 +135,7 @@ it("call the greet url",
 
 This is an example test for our `HelloService`. As you can see, it tells the mockBackend to response with "Hello Michal" string when the request comes. Then we run the service method and check if the result is what it should be. 
 
-## <a name="components"></a>Components
+## Components
 Now, it's the time to test `HomeComponent`. First, we need to prepare the `TestBed`:
 
 {% highlight typescript %}
@@ -196,7 +187,7 @@ it("can initialize", async(() => {
 
 This is a test for our component. We check if angular can initialize it and also if the page contains elements it should. 
 
-# <a name="summary"></a>Summary
+# Summary
 Now the output from karma runner looks better: 
 
 ![karma](/images/posts/2016-09-19-testing-in-angular2/karma-full.png)

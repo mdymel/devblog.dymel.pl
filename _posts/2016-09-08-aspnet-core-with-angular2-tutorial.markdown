@@ -13,23 +13,10 @@ In this tutorial, I would like to show you, how to set up an application using A
  
 The whole project, which you can use as a template, can be found on [GitHub](https://github.com/mdymel/AspNetCoreAngular2). 
 
-1. [Backend](#backend)
-    1. [Startup class](#backend-startup)
-1. [Frontend](#frontend)
-    1. [NPM packages](#frontend-npm-packages)
-    1. [Index.html](#frontend-index)
-        * [HEAD section](#frontend-index-head)
-        * [BODY section](#frontend-index-body)
-    1. [SystemJS config file](#frontend-systemjs)
-    1. [Bootstrapping the AppModule](#frontend-appmodule)
-    1. [Extending the app with new components](#frontend-components)
-    1. [HomeComponent](#frontend-homecomponent)
-1. [Running the app!](#frontend-running)
-1. [Adding a service](#frontend-service)
-1. [ApiController](#apicontroller)
-1. [Summary](#summary)
+1. TOC
+{:toc}
 
-# <a name="backend"></a>Backend - ASP.NET Core based API
+# Backend - ASP.NET Core based API
 
 I will start with preparing our backend service. For that, open up a Visual Studio and create an empty ASP.NET Core web project. After that, you should have a simple app ready to print “Hello World”. Let’s modify it to suit our needs. 
 
@@ -42,7 +29,7 @@ Since we want to use MVC for the API and serve static files, you need to add fol
 "Microsoft.AspNetCore.StaticFiles": "1.0.0"
 {% endhighlight %}
 
-## <a name="backend-startup"></a>Startup class
+## Startup class
 Now, let's modify the Startup class, to tell asp.net to use MVC: 
 
 {% highlight csharp %}
@@ -103,9 +90,9 @@ What it does is, if MVC returns 404 response and the request path does not have 
 
 It will serve this index file and angular app will pick up from there. 
 
-# <a name="frontend"></a>Frontend - Angular2 Single Page Application
+# Frontend - Angular2 Single Page Application
 
-## <a name="frontend-npm-packages"></a>NPM packages 
+## NPM packages 
 At this point, we have our backend part ready. Let’s setup the frontend. First, we need to get all the packages Angular2 needs from npm. For this, you need to add a package.json file with such dependencies: 
 
 {% highlight json %}
@@ -187,11 +174,11 @@ if (context.Response.StatusCode == 404 &&
 }
 {% endhighlight %}
 
-## <a name="frontend-index"></a>Index.html
+## Index.html
 
 At this point we have everything ready to start building our angular2 app. As a first step, let's create an index.html file. The whole file is available on [GitHub](https://github.com/mdymel/AspNetCoreAngular2/blob/master/src/AspNetCoreAngular2/Frontend/index.html). In general, there are two important parts to this file. 
 
-### <a name="frontend-index-head"></a>HEAD section 
+### HEAD section 
 Scripts references and base header: 
 
 {% highlight html %} 
@@ -205,7 +192,7 @@ Scripts references and base header:
 <base href="/">
 {% endhighlight %}
 
-### <a name="frontend-index-body"></a>BODY section  
+### BODY section  
 Two things are happening here. One of the script imports in the head section was systemjs config file. We'll get to it in a moment, but it's basically a setup for all JS modules. The statement below is initialziing our application by importing it's main file. After that, there's a placeholder for our application. 
 
 {% highlight html %}
@@ -217,7 +204,7 @@ Two things are happening here. One of the script imports in the head section was
 <app>Loading...</app>
 {% endhighlight %}
 
-## <a name="frontend-systemjs"></a>SystemJS config file
+## SystemJS config file
 By default, angular2 uses SystemJS module loader to manage dependencies. I won't be going into details of how it works, because it's not the topic of this post. The config file contains a list of packages with properties telling it, how to load these packages: 
 
 {% highlight js %}
@@ -269,7 +256,7 @@ By default, angular2 uses SystemJS module loader to manage dependencies. I won't
 })(this);
 {% endhighlight %}
 
-## <a name="frontend-appmodule"></a>Bootstrapping the AppModule
+## Bootstrapping the AppModule
 
 Now, it's time to prepare and bootstrap our application. First task is to create an app.module.ts file: 
 
@@ -324,14 +311,14 @@ export const routing = RouterModule.forRoot(appRoutes);
 
 For now, I have added just one route, to the home component we're going to create in a moment. 
 
-## <a name="frontend-components"></a>Extending the app with new components
+## Extending the app with new components
 If you want to add new routes in future you just have to complete these steps: 
 
 1. Create a component, for example ProductListComponent
 1. Add a new component in the declarations section of the main.ts file 
 1. Add new route in the _app.routes.ts_ file
 
-## <a name="frontend-homecomponent"></a>HomeComponent
+## HomeComponent
 We now have everthing wired, it's time to create a HomeComponent:
 
 {% highlight typescript %}
@@ -346,7 +333,7 @@ export class HomeComponent {
 
 It's as simple as it can get. We will add something extra later on :) 
 
-# <a name="frontend-running"></a>Running the app! 
+# Running the app! 
 
 Previous step was the last one needed before we could run our small application. To do that, we need to first build the Frontend part. If you look into GitHub repository, you will find a [gulpfile.js](https://github.com/mdymel/AspNetCoreAngular2/blob/master/src/AspNetCoreAngular2/gulpfile.js) file. Because we were using TypeScript for angular2 code, we need to transpile it to JavaScript. We have to also copy all other files from Frontend folder to wwwroot, which will be served by ASP.NET Core API. There are two commands useful at this stage: 
 
@@ -361,7 +348,7 @@ When you've built your frontend part, you can start the application in VisualStu
 
 We have a ASP.NET Core application serving Angular2 app. Next step is to add an Angular2 service which will get some data from the API. 
 
-# <a name="frontend-service"></a>Adding a service 
+# Adding a service 
 The best way to implement communication with the API is through the services. This way you make the app modular and much easier to test. To add a service, create a file named hello.service.ts: 
 
 {% highlight typescript %}
@@ -414,7 +401,7 @@ Few things were added here:
 
 The subscribe method of Observable get's a function, which is invoked, when the result of an Observable is ready to be used. It's typical way of doing things asynchronously - in other words it's a callback method. 
 
-# <a name="apicontroller"></a>ApiController
+# ApiController
 
 For all of it to work, we also need a simple API controller in our backend: 
 
@@ -434,7 +421,7 @@ With all these changes, our app prints very nice greeting:
 
 ![Greetings from ASP.NET Core and Angular2](/images/posts/2016-09-08-aspnet-core-with-angular2-tutorial/greeting.png)
 
-# <a name="summary"></a>Summary
+# Summary
 
 I think that it's enough to digest for one post, so I will finish now. If you go to [GitHub](https://github.com/mdymel/AspNetCoreAngular2), you can see the whole project, clone it and have a play with it yourself. If you like this post and would like to see more like that, please let me know in comments below what specific subject you are interested in.
 
