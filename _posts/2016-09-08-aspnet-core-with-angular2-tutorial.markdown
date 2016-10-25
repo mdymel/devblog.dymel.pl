@@ -13,6 +13,12 @@ In this tutorial, I would like to show you, how to set up an application using A
  
 The whole project, which you can use as a template, can be found on [GitHub](https://github.com/mdymel/AspNetCoreAngular2). 
 
+---
+
+**UPDATE:** _There is a new tutorial available showing [how to use Angular2 CLI with ASP.NET Core](/2016/10/25/angular2-cli-with-aspnet-core-application-tutorial/). I recommend using the CLI tool as it has a lot of useful features._
+
+---
+
 1. TOC
 {:toc}
 
