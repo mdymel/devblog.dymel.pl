@@ -86,7 +86,7 @@ Next, add a new Class Library project in this solution.
 
 I have used the Class Library so that the frontend part is visible in the Visual Studio. 
 
-Now, open a command prompt, cd to the Frontend directory and run `ng init --name ProjectName`. This step will take a while. Ng will bootstrap your angular application and download all npm packages that you need. 
+Now, open a command prompt. If you haven't done that already, install Angular CLI with `npm install -g angular-cli`. Next, cd to the Frontend directory and run `ng init --name ProjectName`. This step will take a while. Ng will bootstrap your angular application and download all npm packages that you need. 
 
 ## Proxy to the API
 Because you will use TypeScript to write the frontend part, you can't just serve these files to the browser. In the previous tutorial, I have used gulp to process all the files. Here, we will use `ng` command for it. The `ng serve` command is building the app, serves it on 4200 port and watches for changes you make in your code. When it detects modified file, it rebuilds the app and sends an event to the browser so it refreshes the window. This is great, but we also need to call our ASP API somehow. This is where the proxy configuration comes in. You need to create a file called `proxy.conf.json` in the Frontend directory: 
