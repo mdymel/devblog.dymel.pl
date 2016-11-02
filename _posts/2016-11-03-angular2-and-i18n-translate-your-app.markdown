@@ -7,7 +7,7 @@ image: /images/posts/2016-11-03-angular2-and-i18n-translate-your-app/featured.jp
 tags: 
  - angular2
 ---
-Continuing, what has become, an Angular2 series on my blog, today I would like to show you, how to internationalize your Angular2 application. You will learn how to tag your messages, how to build xlf files for translation and to configure your application. 
+Continuing, what has become, an Angular2 series on my blog, today I would like to show you, how to internationalise your Angular2 application. You will learn how to tag your messages, how to build xlf files for translation and to configure your application. 
 
 1. TOC
 {:toc}
@@ -15,21 +15,21 @@ Continuing, what has become, an Angular2 series on my blog, today I would like t
 Code: [GitHub](https://github.com/mdymel/ng2-i18n)
 
 # Internationalization (i18n) vs localization (l10n)
-First thing I would like to cover is the difference between the terms above. This is an explanation you can find on w3c service: 
+The first thing I would like to cover is the difference between the terms above. This is an explanation you can find on w3c service: 
 
-> Localization refers to the adaptation of a product, application or document content to meet the language, cultural and other requirements of a specific target market (a "locale").
+> Localisation refers to the adaptation of a product, application or document content to meet the language, cultural and other requirements of a specific target market (a "locale").
 > 
-> Internationalization is the design and development of a product, application or document content that enables easy localization for target audiences that vary in culture, region, or language.
+> Internationalisation is the design and development of a product, application or document content that enables easy localisation for target audiences that vary in culture, region, or language.
 
 In short, we will focus on making your app translatable. 
 
 # Installing the tools your need 
-Angular team has prepared a tool, which extracts messages for translation. It is a part of angular compiler CLI. You install it with the angular compiler using following command: `npm install @angular/compiler-cli @angular/platform-server --save`.  
+The angular team has prepared a tool, which extracts messages for translation. It is a part of angular compiler CLI. You install it with the angular compiler using following command: `npm install @angular/compiler-cli @angular/platform-server --save`.  
 
 # Generating your app
-As I mentioned before in the [tutorial](/2016/10/25/angular2-cli-with-aspnet-core-application-tutorial/) and [post](/2016/10/20/angular2-cli/) about Angular CLI, when you starting new project, in my opinion, you should use the CLI. Unfortunately, right now, you can't use the CLI in translated applications. It's because the CLI compiles your templates while doing build. The problem with that is, the translations are applied during the compilation. This means, the CLI would have to generate one build per language... Currently, maintainers of i18n are discussing possibilities, how to merge these two worlds. Until it's resolved, if you want to translate your application, you have to stick to traditional approach. 
+As I mentioned before in the [tutorial](/2016/10/25/angular2-cli-with-aspnet-core-application-tutorial/) and [post](/2016/10/20/angular2-cli/) about Angular CLI, when you starting a new project, in my opinion, you should use the CLI. Unfortunately, right now, you can't use the CLI in translated applications. It's because the CLI compiles your templates while doing the build. The problem with that is, the translations are applied during the compilation. This means the CLI would have to generate one build per language... Currently, maintainers of i18n are discussing possibilities, how to merge these two worlds. Until it's resolved, if you want to translate your application, you have to stick to a traditional approach. 
 
-You can check, how to prepare a project in the [tutorial](/2016/09/08/aspnet-core-with-angular2-tutorial/) I have written few weeks ago. For this post, I have used the [quickstart guide](https://angular.io/docs/ts/latest/quickstart.html) available on angular site.  
+You can check, how to prepare a project in the [tutorial](/2016/09/08/aspnet-core-with-angular2-tutorial/) I have written a few weeks ago. For this post, I have used the [quickstart guide](https://angular.io/docs/ts/latest/quickstart.html) available on angular site.  
 
 Now, when you have a working project, we're ready to put some translatable content there. 
 
@@ -56,7 +56,7 @@ You can translate tag contents and also values in other attributes (`i18n placeh
 
 # Creating language files 
 To parse your app and generate messages.xlf file, you need to run the `ng-xi18n` tool. It's located in `node_modules/.bin` directory: 
-`node_modules\.bin\ng-xi18n`. It analyzes all your templates, extracts messages to be translated and creates a messages.xlf file. 
+`node_modules\.bin\ng-xi18n`. It analyses all your templates, extracts messages to be translated and creates a messages.xlf file. 
 
 The i18n support is still in the beta stage. The `ng-xi18n` will probably output some error messages, but your can ignore them. 
 
@@ -130,7 +130,7 @@ Now, you need to move this file to `/src/lang` folder, create a copy for every l
 Now, all files are setup - we need to let angular know it should use them. 
 
 ## SystemJS plugin to read files text content
-Because, we will use SystemJS to load xlf files, we need to make it possible to load pure text with it. Create a file `systemjs-text-plugin.js`: 
+Because we will use SystemJS to load xlf files, we need to make it possible to load pure text with it. Create a file `systemjs-text-plugin.js`: 
 
 {% highlight js %}
 /*
@@ -149,7 +149,7 @@ exports.translate = function(load) {
 {% endhighlight %}
 
 ## Configuring the application
-First, we need to load the text plugin and setup the language to use. The latter can be done using cookies, or read from some sort of API. For the purpose of this post, I simply hardcoded it. The code below has to be added to `index.html`, before the app initialization.
+First, we need to load the text plugin and setup the language to use. The latter can be done using cookies or read from some sort of API. For the purpose of this post, I simply hardcoded it. The code below has to be added to `index.html`, before the app initialization.
 
 {% highlight js %} 
 // Get the locale id somehow
@@ -193,7 +193,7 @@ function getTranslationsWithSystemJs(file: string) {
 }
 {% endhighlight %}
 
-It's checking `document['locale']`, getting file with translations and passing it in the array with providers. 
+It's checking `document['locale']`, getting a file with translations and passing it in the array with providers. 
 
 Now, we have to modify `main.ts` file to use these providers: 
 
@@ -213,6 +213,6 @@ After these changes, we have an application available in two languages and a pos
 ![app translated to Polish](/images/posts/2016-11-03-angular2-and-i18n-translate-your-app/app-i18n.png)
 
 # Summary
-Even though, the internationalization for Angular2 is still in beta, it seems to be working quite well. It's simple to use and covers pretty much everything you might need. The only downside for me is you can't use it with projects generated with the CLI tool, but that should be solved soon, I hope. 
+Even though the internationalisation for Angular2 is still in beta, it seems to be working quite well. It's simple to use and covers pretty much everything you might need. The only downside for me is you can't use it with projects generated with the CLI tool, but that should be solved soon, I hope. 
 
 As always, you can get the code for this post from [GitHub](https://github.com/mdymel/ng2-i18n).
