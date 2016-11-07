@@ -100,9 +100,9 @@ Because you will use TypeScript to write the frontend part, you can't just serve
 }
 {% endhighlight %} 
 
-The target value contains a port number. If you're using Visual Studio, you can read it from Frontend project properties. 
+The target value contains a port number. If you're using Visual Studio, you can read it from Backend project properties. 
 
-![front project properties](/images/posts/2016-10-25-angular2-cli-with-aspnet-core-application-tutorial/proxy-conf.png)
+![backend project properties](/images/posts/2016-10-25-angular2-cli-with-aspnet-core-application-tutorial/proxy-conf.png)
 
 This will pass all the API requests to the running ASP.NET Core application. 
 
