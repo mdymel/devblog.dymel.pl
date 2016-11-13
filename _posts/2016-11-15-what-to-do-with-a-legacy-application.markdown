@@ -21,19 +21,21 @@ I think it's clear there are different kinds of legacy code. We should treat the
 # Services, tools and utility apps
 You probably have few of them. Someone wrote them some time ago and they do something, somewhere. No one, or only a few people, know what they do. You might think, it will be easier to start with something small, like these apps. Don't. Think when was the last time you had to implement a major change in these apps. You probably don't remember. So don't bother. Leave them as they are. They are doing their job. You should focus on what's really important. 
 
-# Main application in the company 
+# Main application in the company - strategy
 Most software companies have this one, main application, which runs the whole shop. If the company was started years ago, chances are, it's using some old technologies. If it's really old, there is a big chance, these technologies are not supported anymore. In my case, it was an application written in Visual Basic 6. Yes, it was released in 1998. That's when movies "Armageddon" and "Saving Private Ryan" premiered. 
 
-When you're in such situation you have few choices: 
+When you're in such situation you have few choices.
 
-### Keep calm and carry on 
-We were doing that for years. It is a fine solution. The app is working and brings business value. You probably have some framework which allows you to implement changes quickly. Of course, there are problems when you want to use a service, which your current technology does not support. We've had such situation with Memcached. There was no driver, so we had to build it. We wanted to use MongoDB - no chance. This approach is good if you just have to maintain things you already built. If you want to do something more modern, you might run into problems. 
+## Keep calm and carry on 
+We were doing that for years. It is a fine solution. The app is working and brings business value. You probably have some framework which allows you to implement changes quickly. Of course, there are problems when you want to use a service, which your current technology does not support. We've had such situation with Memcached. There was no driver, so we had to build it. We wanted to use MongoDB - no chance. This approach is good if you just have to maintain things you already built and rarely add new stuff. If you want to do something more modern, you might run into problems. 
 
-### Rewrite the bloody thing
-That's probably the worst decision you can make. Think about it. This application was developed for years and is bringing business value to the company. How can you imagine to rebuild it in few months or a year? Of course, you can do it if it's small, but that's rarely the case. Usually, these are monsters. Often without unit tests. You need to have really solid reasons to go this road. 
+## Rewrite the bloody thing
+That's probably the worst decision you can make. Think about it. This application was developed for years and is bringing business value to the company. How can you imagine to rebuild it in few months or a year? Of course, you can do it if it's small, but that's rarely the case. Usually, these are monsters. Often without unit tests. You need to have really solid reasons to go this road. There are many examples of teams trying to do that. They all failed (remember [Netscape Navigator](https://en.wikipedia.org/wiki/Netscape)?). I, personally, haven't heard of a single success with such approach, yet. It is also very hard to sell such idea to the business people. There is probably a pipeline of new things to implement and you want to stop everything and rewrite something which is working and bringing money. 
 
-### Create a separate project and implement new stuff in it
-In my opinion, that is the best way to go. You keep your old app, but whenever you have something new, you do it in the new project. After some time, when the new project is stable and you know what you're doing, you can start moving things over one by one. 
+## Create a separate project and implement new stuff in it
+In my opinion, that is the best way to go. You keep your old app, but whenever you have something new, you do it in the new project. It's much easier to convince business people to it, because these new functionalities were supposed to be done anyway. After a while of adding new stuff in the project, you should have a mature solution, which has proved to be stable. At this point, you can start thinking about moving pieces over from the old platform. 
+
+This way, you have a chance to test your solution in live environment before you move the bits bringing the most business value. If you make a mistake, you don't bring the main product down. You don't stop development of new things for the time of the rewrite. This idea is much easier to sell. 
 
 # Pioneer - leader 
 If you want to bring a new technology into the company, you need to have a pioneer. That is probably you! A person, who will drive this project and make sure it won't die. You will have to test things and pick the best one, be the evangelist in the whole company. There will be 'others' wanting to dump this idea and you will have to defend it. It's not an easy job, but if you succeed, it comes with a big satisfaction. 
