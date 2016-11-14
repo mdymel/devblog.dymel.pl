@@ -9,6 +9,9 @@ tags:
 ---
 The two, biggest problems in IT are cache invalidation and naming things. The third one, I think, is legacy code. If you're not working in a startup, which has just been founded, chances are, you need to deal with some sort of legacy application. For a majority of my career as a developer, I was working in one company. It was great, but we've had to maintain an application, which was created around year 2002! That's when [Napster](https://en.wikipedia.org/wiki/Napster) was shut down! Today, this application is still running, but since a few years, it only contains some of the functionality. The rest is being handled by a new app. In this post, I would like to share some experiences, how we dealt with it. 
 
+1. TOC
+{:toc}
+
 # Legacy code definition
 If you go to wikipedia and search for [legacy code](https://en.wikipedia.org/wiki/Legacy_code), you read:
 
@@ -22,6 +25,7 @@ I think it's clear there are different kinds of legacy code. We should treat the
 You probably have few of them. Someone wrote them some time ago and they do something, somewhere. No one, or only a few people, know what they do. You might think, it will be easier to start with something small, like these apps. Don't. Think when was the last time you had to implement a major change in these apps. You probably don't remember. So don't bother. Leave them as they are. They are doing their job. You should focus on what's really important. 
 
 # Main application in the company - strategy
+![idea](/images/posts/2016-11-15-what-to-do-with-a-legacy-application/idea.jpg)
 Most software companies have this one, main application, which runs the whole shop. If the company was started years ago, chances are, it's using some old technologies. If it's really old, there is a big chance, these technologies are not supported anymore. In my case, it was an application written in Visual Basic 6. Yes, it was released in 1998. That's when movies "Armageddon" and "Saving Private Ryan" premiered. 
 
 When you're in such situation you have few choices.
@@ -38,18 +42,22 @@ In my opinion, that is the best way to go. You keep your old app, but whenever y
 This way, you have a chance to test your solution in a live environment before you move the bits bringing the most business value. If you make a mistake, you don't bring the main product down. You don't stop development of new things for the time of the rewrite. This idea is much easier to sell. 
 
 # Pioneer - leader 
+![leader](/images/posts/2016-11-15-what-to-do-with-a-legacy-application/leader.jpg)
 If you want to bring a new technology into the company, you need to have a pioneer. That is probably you! A person, who will drive this project and make sure it won't die. You will have to test things and pick the best one, be the evangelist in the whole company. There will be 'others' wanting to dump this idea and you will have to defend it. You will have to answer questions from business (why we should invest in it?) and technical people (why Angular? We should pick React - it's cool today). You either have to know all the answers, or gather people around you, who will support you. It's not an easy job, but if you succeed, it comes with a big satisfaction. 
 
 # Selecting technology 
+![technology](/images/posts/2016-11-15-what-to-do-with-a-legacy-application/code.jpg)
 My opinion here is, you should pick what's the newest from the technology your company is in. In our example, we were always working with Microsoft stuff. The main app was VB6, so it was clear we will stick with .NET. We could have tried python, NodeJS or any other popular thing then, but it would make the whole thing few times harder. Unless of course, your team knows these other things too. If not, I would go with something everyone is familiar with. 
 
 I also think you should go with the newest version of the technology you choose. If you're in .NET, go with .NET Core. If you want Angular, pick Angular2. Don't go with something which will have a successor when you finish. It should also make the project more interesting for other developers. I know it's controversial, but in my opinion, when you're starting from scratch and will work on the project for a long time, it's better to be up to date from the day one.  
 
 # Pilot project
+![pilot](/images/posts/2016-11-15-what-to-do-with-a-legacy-application/pilot.jpg)
 You are moving to a new technology. You know which technology it is. Chances are you have never used it. You may start the work on your main project. But I think it's much better to start with some kind of pilot. Project which you can use as a test field for the architecture, libraries. Something to get the grasp of the new thing. You will make mistakes. Some decisions you will regret. It's better to do it in this pilot, so that, when you start the work on the main application, you have some experience. 
 It would be ideal if this project is new - not an existing feature that you're moving to new technology. This way you avoid old thinking. It also can't be critical you finish it in a tight deadline. You don't want anyone standing over you and asking why it's taking so long. 
 
 # People 
+![team](/images/posts/2016-11-15-what-to-do-with-a-legacy-application/team.jpg)
 It's much better to have a team working on such project than a single developer. You can discuss different approaches, validate the thinking. It's crucial to pick a certain type of people. You will need experienced players who are enthusiastic about the new stuff, know the old application and will search for the best solutions for the new one.  Avoid developers who like the status quo and prefer to calmly close tasks. This team will have to make hard decisions and take on the risks. They can't be afraid of breaking things.  
 
 # Summary
