@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What to do with a legacy application
+title: What to do with a legacy application?
 date: '2016-11-15'
 featured: /images/posts/2016-11-15-what-to-do-with-a-legacy-application/featured.jpg
 image: /images/posts/2016-11-15-what-to-do-with-a-legacy-application/featured.jpg
