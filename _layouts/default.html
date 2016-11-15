@@ -11,7 +11,11 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic" />
     <link rel="stylesheet" href="/css/main.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+    <script>
+        if (!window.jQuery) { document.write('<script src="/js/jquery.min.js"><\/script>'); }
+    </script>
+
     <script id="ulp-remote" src="https://tools.dymel.pl/popups/content/plugins/layered-popups/js/remote.min.js?ver=5.89" data-handler="https://tools.dymel.pl/popups/ajax.php"></script>
     
     <!-- SumoMe integration -->
