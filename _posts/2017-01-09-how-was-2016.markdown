@@ -1,0 +1,44 @@
+---
+layout: post
+title: 10..9..8..7..6..5..4..3..2..1.. 2017! 
+date: '2017-01-10'
+featured: /images/posts/2017-01-10-how-was-2016/featured.jpg
+image: /images/posts/2017-01-10-how-was-2016/featured.jpg
+tags: 
+ - 
+---
+Time flies! 2016 passed and we have a new year. With this post, I would like to make a quick summary of the last year and share some of my plans for 2017. But first of all, my dear reader, I would like to wish you a great year! 
+
+For me, last year was really amazing. From carreer perspective, I think it was my best year so far! But let's start from the beginning... 
+
+It started with me handing over resignation in the company I worked for nearly 10 years. It was a time for a change for me and I got a really nice offer for a remote work on a project for one year. I am planning to write more on what I think about such carrer decisions, so watch this space in coming weeks. I started new job in the begining of Feb and at the same time [Maciej Aniserowicz](http://devstyle.pl) announced a dev blogging contest. I was planning to start a blog for a long time, so immediately thought that's it! I have signed up. In the middle of February, I went for holidays to Thailand and that's where I wrote my [first post](/2016/02/27/hello-world/) for this blog :)  
+
+The contest was about having a pet project on github and blogging about it twice a week for three months. My idea for a project was [MiSeCo](/tags/#miseco) and unfortunately that's one of my failures in the last year. I didn't manage to continue development of it when the contest finished. Maybe I will come back to it in 2017 - we will see. 
+
+The blog however, is my biggest success of the last year. I wrote 44 posts from March to November (I had a little break for the last two months). There were over 67k sessions and nearly 83k page views! 
+
+![GA stats](/images/posts/2017-01-10-how-was-2016/stats.png)
+
+The most popular post was [Angular2 tutorial](/2016/09/08/aspnet-core-with-angular2-tutorial/), which received 26% of pageviews (22k). 
+
+Few times my posts were mentioned by [Microsoft twitter accounts](https://twitter.com/mdymel/status/815873592843968512), "The week in .NET" posts on MSDN blog and [ASP NET Community Standup videos](https://www.youtube.com/watch?v=VFvZ_yileVk&feature=youtu.be&t=22m8s). 
+
+The contest finished in June with the two stages of voting and I ended up 6th from 296 participants! Great success! :) 
+
+Another benefit of taking part in it was meeting many great fellow developers. 
+
+In the end of the year I got a job offer for the new project, so I have to say - the blog is working :) I think it was the best thing I did from the career perspective. 
+
+# Plans for 2017
+And here is what I plan to accomplish in the new year:
+
+ * **keep this blog alive** - as I said, I haven't written a post for two months. I would like to get back to writing at least one post a week, so the goal is to write 50 posts this year 
+ * **pet project** - be it MiSeCo or something new
+ * **start "Getting Things Done"** - GTD is something I wanted to implement in my life for quite some time now
+ * **run half marathon** - I have not been running before and I signed up for Szczecin Half Marathon for end of August
+
+ I hope in a year I will tell you how I did :) 
+
+ Regarding the blog, there will probably be a slight change of topics I will be writing about. My Angular2 project is coming to an end. The next one will be an iOS app with all the infrastructure, so an API and probably some website, so expect more topics from that area, but also about architecture, maybe some docker stuff - we will see. 
+
+ Happy new year! 
