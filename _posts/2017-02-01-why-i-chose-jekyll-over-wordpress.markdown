@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why I chose Jekyll over WordPress
-date: '2017-01-24'
+date: '2017-02-01'
 featured: /images/posts/2017-02-01-why-i-chose-jekyll-over-wordpress/featured.jpg
 image: /images/posts/2017-02-01-why-i-chose-jekyll-over-wordpress/featured.jpg
 tags: 
