@@ -7,7 +7,7 @@ image: /images/posts/2017-02-16-choosing-git-hosting/featured.jpg
 tags: 
  - git
 ---
-When you work on an opensource project, you go to GitHub. Sometimes though you don't want to make your source code public. That's the moment when you have to decide, which provider to choose. There are currently 3 who really count in the game: [GitHub](https://github.com), [BitBucket](https://bitbucket.org) and [GitLab](https://gitlab.com). I have recently started working on a new project, so had to choose between them and thought I would share the outcome. 
+When you work on an opensource project, you go to GitHub. Sometimes though you don't want to make your source code public. That's the moment when you have to decide, which provider to choose. There are currently 3 who really count in the game: [GitHub](https://github.com), [BitBucket](https://bitbucket.org) and [GitLab](https://gitlab.com). I have recently started working on a new project, so had to choose between them. I thought I will share the outcome. 
 
 # Requirements
 
