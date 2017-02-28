@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Choosing git hosting service in 2017
+title: Choosing a git hosting service in 2017
 date: '2017-02-16'
 featured: /images/posts/2017-02-16-choosing-git-hosting/featured.jpg
 image: /images/posts/2017-02-16-choosing-git-hosting/featured.jpg
