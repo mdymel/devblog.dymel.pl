@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Setting up an open source .NET Core project'
+title: 'Setting up an open source project'
 date: '2017-03-06'
 image: /images/posts/2017-03-06-setting-up-opensource-net-project/featured.jpg
 tags:
