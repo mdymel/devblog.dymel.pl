@@ -1,11 +1,10 @@
 ---
 layout: post
-title: On technical debt
-date: '2017-02-09'
-featured: /images/posts/2017-02-09-technical-debt/featured.jpg
-image: /images/posts/2017-02-09-technical-debt/featured.jpg
+title: 'On technical debt'
+date: '2017-03-16'
+image: /images/posts/2017-03-16-technical-debt/featured.jpg
 tags: 
-
+- dajsiepoznac2017
 ---
 Technical debt is an inherent part of IT. If you're working on software, you probably incurred it few times. Sometimes it is worth to accept it, but only if you know exactly why you took it, how much is it and when or if you're going to pay it up. And most importantly, if you agreed on it with business. There have been many articles written about this topic, but most of them cover the business side. Today, I would like to share few thoughts from a developers perspective.   
 
