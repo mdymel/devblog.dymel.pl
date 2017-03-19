@@ -66,3 +66,5 @@ As a developer, it's not your decision to make things, not to the highest standa
 
 # Summary
 What do you think? Do you often have to incur technical debt? Or maybe you have a rule to never do it? Do you confirm your decisions with non-technical project stakeholders? What is your experience in this area? Share in comments! 
+
+PS. If you want to read more about the technical debt, I've found a [very nice post](https://software-development.blog/2017/01/03/cto-agile-technical-debt/) by Jean-Christophe Huc, who talks about it from a perspective of the CTO.
