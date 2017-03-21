@@ -8,6 +8,8 @@
 # Site title
 title: "Michal Dymel - DevBlog"
 
+timezone: UTC
+
 # A description of your site for social meta tag, search engines, and feed.xml
 description: "Passionate software developer interested in Web Development, .NET, Angular2, Architecture and security. Currently doing remote consulting."
 
