@@ -22,7 +22,7 @@ I prefer to use git from the console, but... windows command line is sh... not v
 
 ![Servant Salamander](/images/posts/2017-03-23-web-dev-tools/salamander.png)
 
-It's like Windows Commander, but with much better looks. It also works better - at least for me. It's just more intuitive. Also has loads of plugins like ftp support (is anyone using ftp these days?), disk copy, checksums etc. Unfortunately, it's not free but has a trial. You can download it from the [Altap](https://www.altap.cz/) website. 
+It's like Total Commander, but with much better looks. It also works better - at least for me. It's just more intuitive. Also has loads of plugins like ftp support (is anyone using ftp these days?), disk copy, checksums etc. Unfortunately, it's not free but has a trial. You can download it from the [Altap](https://www.altap.cz/) website. 
 
 ## Greenshot - screenshots 
 
