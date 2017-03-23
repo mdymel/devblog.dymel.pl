@@ -50,7 +50,7 @@ When I have some bigger project I want to preview. Or some small work to do in s
 # Backend 
 
 ## Visual Studio  
-No introduction needed here, I think. In my opinion, it's the best IDE out there. Especially with Resharper (next point). It has all you need. The downside is its hunger for memory, but my thinkpad with 16GB handles it perfectly fine. The [recent VS 2017](/2017/03/07/visual-studio-2017-first-impressions/) release makes it even reacher in features and a bit faster. 
+No introduction needed here, I think. In my opinion, it's the best IDE out there. Especially with ReSharper (next point). It has all you need. The downside is its hunger for memory, but my thinkpad with 16GB handles it perfectly fine. The [recent VS 2017](/2017/03/07/visual-studio-2017-first-impressions/) release makes it even richer in features and a bit faster. 
 
 ### ReSharper
 The thing, which makes Visual Studio much better. If you do .NET, you probably know it If you don't, go ahead and [download trial](https://www.jetbrains.com/resharper/?fromMenu) now! When the trial ends, JetBrains has now a subscription plan, which cost less than $13 for an individual developer. It's not much considering what you get: code analysis, refactorings, navigation and much more). Must have! 
