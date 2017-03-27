@@ -5,6 +5,7 @@ date: '2017-03-01'
 image: /images/posts/2017-03-01-hello-world-2/featured.jpg
 tags:
 - dajsiepoznac2017
+- stactive
 ---
 I have [started this blog](/2016/02/27/hello-world/) exactly one year ago. I did it because I took part in a Polish contest called "Daj Się Poznać". The challenge was to have a pet project on GitHub and blog about it for 10 weeks. It was hard, but I survived and somehow ended up in 6th place :) Today, new edition of the same contest starts and I decided to accept the challenge again! 
 
