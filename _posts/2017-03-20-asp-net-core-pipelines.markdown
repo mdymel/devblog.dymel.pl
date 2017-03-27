@@ -6,6 +6,7 @@ image: /images/posts/2017-03-20-asp-net-core-pipelines/featured.jpg
 tags: 
 - dajsiepoznac2017
 - aspnetcore
+- stactive
 ---
 Sometimes, in the web application, you need to perform some task for every request. It could be logging, authenticating users or modifying the response. Every web framework allows implementing this in some way. Today, I would like to show you how to do it in the ASP.NET Core. 
 
