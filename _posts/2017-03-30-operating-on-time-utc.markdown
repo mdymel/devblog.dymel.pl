@@ -31,5 +31,12 @@ Even you don't have users around the world, imagine you have a site, which is ho
 # UTC to the rescue
 Fortunately, there is a concept of the **Coordinated Universal Time**. It is the primary time standard by which the world regulates clocks and time. It does not observe daylight saving time and, by its nature, does not have time zones. What it means is, if you save an event with the time in the UTC format, you will always know the exact moment it took place. If you have users from around the world, you can adjust the time you display to their timezone. 
 
-# Forget about DateTime.Now
-In my opinion, every system should use UTC in the backend. It's the only way to be certain about time. You can worry about timezones and DST in the frontend. But servers should operate on Universal Time. 
+So I advice you to forget about `DateTime.Now()` (if you're using .NET) and switch entirely to `DateTime.UtcNow()`. This can save you some trouble in future. There is also a `DateTimeOffset` structure in .NET, which is supported by EntityFramework and SQL Server (from the 2008 version), in my opinion, every system should use UTC in the backend. It's the only way to be certain about time. You can worry about timezones and DST in the frontend. But servers should operate on Universal Time.
+
+I think it's also worth to mention two libraries, which are very helpful when working with time: 
+
+ * for .NET it's [Noda Time](http://nodatime.org/) - a better date and time API for .NET
+ * for Java equivalent - [Joda Time](http://www.joda.org/joda-time/)
+ * for JavaScript - [Moment.js](https://momentjs.com/) - very helpful in parsing and working with dates and times
+
+How do you deal with time and these problems? 
