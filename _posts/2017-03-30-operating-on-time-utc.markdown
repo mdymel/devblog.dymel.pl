@@ -21,7 +21,7 @@ For one, it is the DST problem I mentioned in the introduction to this post.
 >
 > Wikipedia
 
- If something happens between 2 and 3 on the last Saturday of October (in Europe), you can not be sure, in exactly which moment it did happen. I once had a problem, I wanted to deserialize date stored in the database and .NET threw an exception saying it was ambitious. It was during the time change... 
+ If something happens between 2 and 3 on the last Saturday of October (in Europe), you can not be sure, in exactly which moment it did happen. I once had a problem, I wanted to deserialize date stored in the database and .NET threw an exception saying it was ambiguous. It was during the time change... 
 
 ## Time zones
 If you write a system, which is used around the globe, you have to deal with time zones. Let's say you are running Facebook and a user in the Philippines adds a comment at 0.30AM. At the same time, his friend from London reads it. Facebook tells the London fella the comment was written at 5.30PM. Because they do track time zones between users. It's even more tricky if you add DST problem here because different countries deal with it differently. 
