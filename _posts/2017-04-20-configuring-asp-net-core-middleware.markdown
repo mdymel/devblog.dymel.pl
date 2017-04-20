@@ -3,7 +3,7 @@ layout: post
 title: 'Configuring ASP.NET Core middleware'
 date: '2017-04-20'
 featured: /images/posts/2017-04-20-configuring-asp-net-core-middleware/featured.jpg
-image: /images/posts/2017-04-20-configuring-asp-net-core-middleware/social.jpg
+image: /images/posts/2017-04-20-configuring-asp-net-core-middleware/social.png
 tags: 
 - dajsiepoznac2017
 - aspnetcore
