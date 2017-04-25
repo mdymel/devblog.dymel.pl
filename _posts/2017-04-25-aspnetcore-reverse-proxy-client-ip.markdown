@@ -11,6 +11,9 @@ tags:
 ---
 One of my current projects is hosted in docker environment (more on that topic coming!). The setup requires me to use an Nginx reverse proxy. Additionally, for performance reasons, I also use CloudFlare as a CDN. This all means, before the user gets to my application, he has to go through at least two proxy servers. That's an issue when you want to know your users IP address.  
 
+1. TOC
+{:toc}
+
 # Reverse Proxy
 If you never heard about a reverse proxy, I will quickly explain what it is. When you host your app in a docker container, it will probably expose some port it runs on. This will rarely be a default HTTP port number 80. You probably want to have more apps running on this server, so you don't want to block the default port. You will use 5012 for example. If you want to make the application accessible from the outside world, you need to have something listening on the port 80 and forwarding the traffic to your app. This something is called reverse proxy. 
 
@@ -43,5 +46,5 @@ I spent quite some time today to figure out, why it wasn't working for me:
  * you need to add all proxy servers to the `KnownProxies` list - including the last one(!)
  * `ForwardLimit` is a limit of proxy servers - if set to null, it disables this check
 
- # Summary
- I've seen applications doing this manually. Don't go that road. This is a much better method. It also proves, there is always someone who dealt with your problem - use his work instead of implementing such things yourself. 
+# Summary 
+I've seen applications doing this manually. Don't go that road. This is a much better method. It also proves, there is always someone who dealt with your problem - use his work instead of implementing such things yourself. 
