@@ -1,0 +1,51 @@
+---
+layout: post
+title: Summary of 2017 and plans for 2018 
+date: '2018-01-10'
+featured: /images/posts/2018-01-10-summary-of-2018/featured.jpg
+image: /images/posts/2018-01-10-summary-of-2018/featured.jpg
+tags: 
+ - summary
+---
+It's this time of year when everyone (almost) makes summaries of the previous and plans for a new year ahead of us. Time for me! 
+
+Exactly one year ago I wrote a [post](https://devblog.dymel.pl/2017/01/10/how-was-2016/) to summarize first year of my blog and make plans for 2017. Today it's time to look back and see what did I manage to accomplish, where I failed and how last year was in general. 
+
+# 2017 on the blog 
+I wanted to write 50 blog posts in 2017. I didn't manage to do it. I had too much on my plate (more on that later) and unfortunately, blog had to suffer. I wrote 31 posts - 20 of them for the "Daj sie poznac" blogging contest (again - more on that later). The second half of the year wasn't very fruitful here. I only posted 4 times. What makes me really happy is the fact that even though I wasn't creating new content, I was still receiving more than 5000 sessions a month. 
+
+![stats](/images/posts/2018-01-10-summary-of-2018/stats.png)
+
+In total there were 124 000 sessions in the last year and almost 150 000 page views! That's 85% more year to year! 
+
+Most popular posts were: 
+
+ * [How to upload a file (image) from angular2 to asp.net core](/2016/09/02/upload-file-image-angular2-aspnetcore/)
+ * [Angular2 CLI with ASP.NET Core application - tutorial](/2016/10/25/angular2-cli-with-aspnet-core-application-tutorial/)
+ * [Angular2 and i18n - translating your application](https://devblog.dymel.pl/2016/11/03/angular2-and-i18n-translate-your-app/)
+
+Next 3 are about .NET, but Angular clearly won :) 
+
+# Blogging contest
+It was a second time I took part in the "Daj sie poznać" contest. In the internal voting by other contestants I got to top 25 (out of nearly a 1000!), which I think is a great success! For 3 months I was writing two posts a week and developing a project on GitHub. Unfortunately the idea for the project didn't prove to be motivating in the long run and it ended up as one of many started - not finished projects on github ;) C'est la vie. All in all, it was again great experience, where I met many interesting people. I also proved myself I can write twice a week, even though I know I am not able to sustain that for a longer time. 
+
+# Work
+One of the reasons I didn't blog so much - especially in the second part of the year was that I was working a lot. I had two projects - one full time and another one after hours. It's fine for some time, but after a while it's really exhausting. After few months I didn't have power for anything else. And the worst part was constant feeling that I should do something for work (always - weekends, evenings...). With the end of the year I said enough :) 
+
+# Sport 
+One of my goals for 2017 was to run a half marathon. And I did it! :) 
+
+![running](/images/posts/2018-01-10-summary-of-2018/running.jpg)
+
+That's me on the finish line. Photo credit: my wife ;) 
+
+I should add that my first run ever was in January last year and the event was in August. This year I am signed up for half marathon again and... a triathlon (1/8 IM).
+
+# Plans and goals for 2018
+So... enough summarizing - let's talk 2018! 
+
+ * **blog!** - I definitely want to get back to blogging and post once a week. As a goal for this year I would like to have 40 posts. 
+ * run **halfmarathon** in less than 2h (it was 2:18 last year) and finish **triathlon** (1/8 IM)
+ * **work less** - have more time for other things in life and go for 2 weeks holidays in summer  
+
+ With that I wish you all the best in the New Year. Let's rock it! 

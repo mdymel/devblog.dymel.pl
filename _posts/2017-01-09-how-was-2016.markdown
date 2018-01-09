@@ -5,7 +5,7 @@ date: '2017-01-10'
 featured: /images/posts/2017-01-10-how-was-2016/featured.jpg
 image: /images/posts/2017-01-10-how-was-2016/featured.jpg
 tags: 
- - 
+ - summary
 ---
 Time flies! 2016 passed and we have a new year. With this post, I would like to make a quick summary of the last year and share some of my plans for 2017. But first of all, my dear reader, I would like to wish you a great year! 
 
