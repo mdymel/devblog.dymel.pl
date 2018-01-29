@@ -3,7 +3,7 @@ layout: post
 title: Tabs vs spaces? EditorConfig to the rescue!
 date: '2018-01-29'
 featured: /images/posts/2018-01-29-tabs-vs-spaces-editorconfig/featured.jpg
-image: /images/posts/2018-01-29-tabs-vs-spaces-editorconfig/social.jpg
+image: /images/posts/2018-01-29-tabs-vs-spaces-editorconfig/social.png
 tags: 
  - tools
 ---
